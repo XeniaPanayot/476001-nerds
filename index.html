@@ -4,23 +4,23 @@
 	<meta charset="utf-8">
 	<title>Nerds</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
 	<nav class="main-navigation">
-		<a class="">
+		<a class="" href="https://htmlacademy.ru/intensive/htmlcss">
 			<img src="img/nerds-logo.png" width="160" height="67" alt="Логотип Nerds">
 		</a>
 		<ul class="site-navigation">
-			<li><a href="#">СТУДИЯ</a></li>
-			<li><a href="#">КЛИЕНТЫ</a></li>
-			<li><a href="#">МАГАЗИН</a></li>
-			<li><a href="#">КОНТАКТЫ</a></li>
+			<li><a href="#">Студия</a></li>
+			<li><a href="#">Клиенты</a></li>
+			<li><a href="#">Магазин</a></li>
+			<li><a href="#">Контакты</a></li>
 		</ul>
 		<ul class="cart">
-			<li class="cart-link"><a href="#">КОРЗИНА</a></li>
+			<li class="cart-link"><a href="#">Корзина</a></li>
 		</ul>					
 	</nav>
 </header>
@@ -29,106 +29,133 @@
 	
 	<div class="slider container">
 		<div class="slide-1">
-			<p class="slide-1__headline"><b>Долго, дорого, скурпулезно.</b></p>
-			<p class="copy slide-1__copy">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+			<p class="headline"><b>Долго, дорого, скурпулезно.</b></p>
+			<p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
 		</div>
-		<a class="button slider__button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+		<a class="button slider-button" href="#">Узнать больше</a>
+		<div class="slide-2">
+			<p class="headline"><b>Любим математику как никто другой</b></p>
+			<p class="text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+		</div>
+		<a class="button slider-button" href="#">Узнать больше</a>
+		<div class="slide-3">
+			<p class="headline"><b>Только ночь, только хардкор</b></p>
+			<p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+		</div>
+		<a class="button slider-button" href="#">Узнать больше</a>
 	  </div>
-	  <div class="slider__indicator-box">
-		  <ul class="slider__indicator">
-			 <li><input type="radio" name="slider-indicator1"></li>
-			 <li><input type="radio" name="slider-indicator2"></li>
-			 <li><input type="radio" name="slider-indicator3"></li>
+	  <div class="slider-indicator-box">
+		  <ul class="slider-indicator">
+			 <li><input type="radio" name="slider-indicator" value="1"></li>
+			 <li><input type="radio" name="slider-indicator" value="2"></li>
+			 <li><input type="radio" name="slider-indicator" value="3"></li>
 		</ul>
 	</div> 
 <section class="services container">
 	<h2 class="visually-hidden">Услуги студии Nerd's</h2>
 	<ul class="our-services">
-	<li class="services__item services__item-1">
-			<img class="services__image" src="img/illustration-1.jpg" width="300" height="148" alt="веб-сайты">
-			<h2 class="services__headline">ВЕБ-САЙТЫ</h2>
-			<p class="copy services__copy">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
-			<a class="button services__button services__button-red" href="#">ЗАКАЗАТЬ</a></li>
-		<li class="services__item services__item-2">
-			<img class="services__image" src="img/illustration-2.jpg" width="300" height="148" alt="мобильные приложения">
-			<h2 class="services__headline">ПРИЛОЖЕНИЯ</h2>
-			<p class="copy services__copy">Покорите топ-10 приложений в App-Store и Google Play</p>
-			<a class="button services__button services__button-green" href="#">ЗАКАЗАТЬ</a> 
+	<li class="services-item services-websites">
+			<img class="services-image" src="img/web-site.jpg" width="300" height="148" alt="веб-сайты">
+			<h2 class="services-headline">Веб-сайты</h2>
+			<p class="text services-promo">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+			<a class="button services-button button-red" href="#">ЗАКАЗАТЬ</a></li>
+		<li class="services-item services-apps">
+			<img class="services-image" src="img/mobile-apps.jpg" width="300" height="148" alt="мобильные приложения">
+			<h2 class="services-headline">Приложения</h2>
+			<p class="text services-promo">Покорите топ-10 приложений в App-Store и Google Play</p>
+			<a class="button services-button button-green" href="#">ЗАКАЗАТЬ</a> 
 		</li>
-		<li class="services__item services__item-3">
-			<img class="services__image" src="img/illustration-3.jpg" width="300" height="148" alt="презентации">
-			<h2 class="services__headline">ПРЕЗЕНТАЦИИ</h2>
-			<p class="services__copy">Вы даже не подозреваете, насколько вы изумительны!</p>
-			<a class="button services__button services__button-yellow" href="#">ЗАКАЗАТЬ</a>
+		<li class="services-item services-presentations">
+			<img class="services-image" src="img/presentations.jpg" width="300" height="148" alt="презентации">
+			<h2 class="services-headline">Презентации</h2>
+			<p class="text services-promo">Вы даже не подозреваете, насколько вы изумительны!</p>
+			<a class="button services-button button-yellow" href="#">ЗАКАЗАТЬ</a>
 		</li>
 		</ul>
 </section>
-<article class="about-us">
+<section class="about-us">
 	<h1 class="visually-hidden">О студии Nerd's</h1> 
-	<div class="about-us__introduction">
-		<p class="introduction__headline">Мы маленькая, но гордая дизайн-студия из Краснодара.</p>
-		<p class="introduction__copy">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не покладая рук, как роботы.</p>
-		<p class="introduction__services">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
-		<ul class="introduction__services-list">
-				<li class="introduction__services-description">-- Веб-сайтов любой сложности</li>
-				<li class="introduction__services-description">-- Мобильных приложений для iOS и Android</li>
-				<li class="introduction__services-description">-- Слайдшоу и видео для корпоративных презентаций</li>
+	<div class="introduction">
+		<p class="introduction-headline"><b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+		<p class="introduction-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем, не покладая рук, как роботы.</p>
+		<p class="introduction-services">Выполняем заказы на разработку:</p>
+		<ul class="services-list">
+				<li class="services-text">-- Веб-сайтов любой сложности</li>
+				<li class="services-text">-- Мобильных приложений для iOS и Android</li>
+				<li class="services-text">-- Слайдшоу и видео для корпоративных презентаций</li>
 			</ul>		
 	</div>
 	<div class="efficiency">
-		<img class="efficiency__logo" src="img/nerds-illustration.jpg" width="360"  height="210" alt="Логотип Nerds">
-		<p class="efficiency__subtitle">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-		<table class="efficiency__data">
+		<img class="efficiency-logo" src="img/nerds-logo_colored.jpg" width="360"  height="210" alt="Логотип Nerds">
+		<p class="efficiency-subtitle">С 2004 года любим точность во всем:</p>
+		<table class="efficiency-data">
 			<tr>
-				<td class="efficiency__percent">146%</td>
-				<td class="efficiency__percent">100%</td>
-				<td class="efficiency__percent">50%</td>
+				<td class="efficiency-percent">146%</td>
+				<td class="efficiency-percent">100%</td>
+				<td class="efficiency-percent">50%</td>
 			</tr>
 			<tr>
-			  <td class="efficiency__legend">Уровень самоотдачи</td>
-			  <td class="efficiency__legend">Соблюдение сроков</td>
-			  <td class="efficiency__legend">Минимальная предоплата</td>
+			  <td class="efficiency-legend">Уровень самоотдачи</td>
+			  <td class="efficiency-legend">Соблюдение сроков</td>
+			  <td class="efficiency-legend">Минимальная предоплата</td>
 			</tr>
 		</table>	
 	</div>
-</article>
+</section>
 <ul class="partners">
-		<li><a class="partners__logo partners__logo-html" href="https://htmlacademy.ru/intensive/htmlcss" ><img src="img/logo-htmlacademy.png" width="210" height="90" alt="HTML Academy"></a></li>
-		<li><a class="partners__logo partners__logo-barbershop" href="#"><img src="img/logo-borodinsky.png" width="210" height="90" alt="Barbershop BORODINSKI"></a></li>
-		<li><a class="partners__logo partners__logo-pink" href="#"><img src="img/logo-pink.png" width="210" height="90" alt="PINK"></a></li>
-		<li><a class="partners__logo partners__logo-mishka" href="#"><img src="img/logo-mishka.png" width="210" height="90" alt="MISHKA"></a></li>
-	</ul>        		
+		<li>
+			<a class="partners-logo logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" >
+				<img src="img/logo-htmlacademy.png" width="210" height="90" alt="HTML Academy">
+			</a>
+		</li>
+		<li>
+			<a class="partners-logo logo-barbershop" href="#">
+				<img src="img/logo-borodinsky.png" width="210" height="90" alt="Barbershop BORODINSKI">
+			</a>
+		</li>
+		<li>
+			<a class="partners-logo logo-pink" href="#">
+				<img src="img/logo-pink.png" width="210" height="90" alt="PINK">
+			</a>
+		</li>
+		<li>
+			<a class="partners-logo logo-mishka" href="#">
+				<img src="img/logo-mishka.png" width="210" height="90" alt="MISHKA">
+			</a>
+		</li>
+	</ul> 
 </main>
+
 <footer class="main-footer">
 	<div class="contacts">
 		<img src="img/map.jpg" alt="Карта">
-			<div class="contacts__address">
-				<p class="address__subtitle">NЁRDS DESIGN STUDIO</p>
-				<p class="address__copy">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p>
-				<p class="contacts__tel">тел. +7(812) 275-75-75</p>
-				<a href="#" class="button write-us__button">НАПИШИТЕ НАМ</a> 
+			<div class="contacts-address">
+				<h2 class="address-subtitle">Nёrd's design studio</h2>
+				<p class="address">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p> 
+				<a href="tel:+78122757575" class="contacts-tel">тел. +7(812) 275-75-75</a>
+				<a href="#" class="button write-us-button">Напишите нам</a> 
 			</div>
 			<!-- <div class="write-inner">
-				<p class="write-inner__headline">НАПИШИТЕ НАМ</p>
-				<form class="write-inner__form" action="#" method="post">
+				<p class="write-inner-headline">НАПИШИТЕ НАМ</p>
+				<form class="write-inner-form" action="#" method="post">
 					<label for="name-field">Ваше имя</label>
 					<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
 					<label for="email-field">Ваш e-mail</label>
 					<input type="text" name="e-mail" id="email-field" placeholder="Для отправки ответа">
 					<label for="write-space">Текст письма</label>
 					<textarea name="write-field" id="write-space" placeholder="В свободной форме" rows="4"></textarea>
-					<input class="button write__submit-button" type="submit" name="submit-button" value="ОТПРАВИТЬ">			
+					<input class="button write-submit-button" type="submit" name="submit-button" value="ОТПРАВИТЬ">			
 				</form>
 			</div> -->
 			<div class="social-media">	
-			<ul class="social-media__list">
-				<li><a class="social-media__logo social-media__logo-vk" href="#">Вконтакте</a></li>
-				<li><a class="social-media__logo social-media__logo-fb" href="#">Фейсбук</a></li>
-				<li><a class="social-media__logo social-media__logo-inst" href="#">Инстаграм</a></li>    	
+			<ul class="social-media-list">
+				<li><a class="social-media-logo social-media-logo-vk" href="#">Вконтакте</a></li>
+				<li><a class="social-media-logo social-media-logo-fb" href="#">Фейсбук</a></li>
+				<li><a class="social-media-logo social-media-logo-inst" href="#">Инстаграм</a></li>    	
 			</ul>
-			<div class="social-media__promo">
-				<p class="social-media__headline">Давайте дружить, это выгодно!</p>
-				<p class="social-media__discount">Скидка 10% для друзей из социальных сетей.</p>
+			<div class="social-media-promo">
+				<p class="social-media-headline">Давайте дружить, это выгодно!</p>
+				<p class="social-media-discount">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
 	</div>
