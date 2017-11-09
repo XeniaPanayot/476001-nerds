@@ -4,18 +4,15 @@
 	<meta charset="utf-8">
 	<title>Nerds</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 	<header class="main-header">
-		<div class="container">
-			<a class="" href="https://htmlacademy.ru/intensive/htmlcss">
-				<img src="img/nerds-logo.png" width="160" height="67" alt="Логотип Nerds">
-			</a>
-			<nav class="main-header-navigation">
-				<ul class="navigation-list">
+			<a class="logo" href="https://up.htmlacademy.ru/htmlcss/19/project/nerds">
+				<img src="img/nerds-logo.png" width="160" height="67" alt="Логотип Nerds"></a>
+			<nav class="navigation">
+			<ul class="navigation-list">
 					<li>
 						<a class="navigation-item" href="#">Студия</a>
 					</li>
@@ -23,31 +20,29 @@
 						<a class="navigation-item" href="#">Клиенты</a>
 					</li>
 					<li>
-						<a class="navigation-item navigation-current" href="#">Магазин</a>
+						<a class="navigation-item navigation-current">Магазин</a>
 					</li>
 					<li>
 						<a class="navigation-item" href="#">Контакты</a>
 					</li>
 				</ul>
-				<ul class="cart">
-					<li class="cart-link">
-						<a href="#">Корзина</a>
-					</li>
-				</ul>
+						<div class="cart">
+							<a href="#">Корзина</a>
+						</div>
 			</nav>
 		</div>
 	</header>
 
-	<main class="container">
-		<div class="headline container">
+	<main>
+		<div class="headline">
 			<h1 class="page-headline">Магазин готовых шаблонов</h1>
 		</div>
 		
-		<section class="sidebar">
+		<section class="filters">
 			<h2 class="visually-hidden">Фильтр шаблонов</h2>
-			<form class="template-filters" action="#" method="post" name="template-filter">
-				<fieldset class="template-filter-price">
-					<legend class="filters-headline">Стоимость</legend>	
+			<form action="#" method="post" name="template-filter">
+				<fieldset class="price">
+					<legend class="subtitle filter-headline">Стоимость</legend>	
 					<ul>
 						<li>
 							<div class="range-controls">
@@ -71,19 +66,25 @@
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="choose-grid">
-					<legend class="grid-headline">Сетка</legend> 
+				<fieldset class="grid">
+					<legend class="subtitle filter-headline">Сетка</legend> 
 					<ul>
-						<li><input type="radio" name="radiobutton-grid" value="adaptive" id="adaptive-radio" checked>
-							<label for="adaptive-radio">Адаптивная</label></li>
-							<li><input type="radio" name="radiobutton-grid" value="fixed" id="fixed-radio">
-								<label for="adaptive-radio">Фиксированная</label></li>
-								<li><input type="radio" name="radiobutton-grid" value="flexible" id="flexible-radio">
-									<label for="flexible-radio">Резиновая</label></li>
+						<li>
+							<input type="radio" name="radiobutton-grid" value="adaptive" id="adaptive-radio" checked>
+							<label for="adaptive-radio">Адаптивная</label>
+						</li>
+							<li>
+								<input type="radio" name="radiobutton-grid" value="fixed" id="fixed-radio">
+								<label for="adaptive-radio">Фиксированная</label>
+							</li>
+								<li>
+									<input type="radio" name="radiobutton-grid" value="flexible" id="flexible-radio">
+									<label for="flexible-radio">Резиновая</label>
+								</li>
 								</ul>
 							</fieldset>
-							<fieldset class="choose-features">
-								<legend class="features-headline">Особенности</legend> 
+							<fieldset class="features">
+								<legend class="subtitle filter-headline">Особенности</legend> 
 								<ul>
 									<li>
 										<input type="checkbox" name="checkbox-slider" id="checkbox-slider" checked>
@@ -107,12 +108,12 @@
 									</li>
 								</ul>			
 							</fieldset>
-							<a class="button show-results" href="#">Показать</a>
+							<input type="submit" name="Показать"> 
 						</form>	
 					</section>
 
 					<section class="catalogue">
-						<div class="filters-headline">Сортировать</div>
+						<p class="subtitle filters-headline">Сортировать</p>
 						<ul class="filters-list">
 							<li>
 								<a class="filters-item filter-current">По цене</a>
@@ -123,8 +124,6 @@
 							<li>
 								<a class="filters-item" href="#">По названию</a>
 							</li>
-						</ul>
-						<ul class="updown-filters">
 							<li>
 								<button class="filter-btn">down</button>
 							</li>			
@@ -138,7 +137,7 @@
 								<a href="#"><img src="img/img-sedona.jpg" width="360" height="577" alt="SEDONA"></a>
 								<div class="item-inner">
 									<h3 class="item-inner-title">Sedona</h3>
-									<p class="item-inner-text">Информационный сайт для туристов></p>
+									<p class="subtitle">Информационный сайт для туристов></p>
 									<a class="item-inner-btn" href="#">9900 руб.</a>
 								</div>
 							</li>
@@ -146,7 +145,7 @@
 								<a href="#"><img src="img/img-pink.jpg" width="360" height="577" alt="PINK APP"></a>
 								<div class="catalogue-item-inner">
 									<h3 class="item-inner-title">Pink app</h3>
-									<p class="item-inner-text">Продуктовый лендинг приложения для iOS и Android</p>
+									<p class="subtitle">Продуктовый лендинг приложения для iOS и Android</p>
 									<a class="item-inner-btn" href="#">9900 руб.</a>
 								</div>
 							</li>
@@ -154,21 +153,21 @@
 								<a href="#"><img src="img/img-barbershop.jpg" width="360" height="577" alt="BORODINSKI"></a>
 								<div class="catalogue-item-inner">
 									<h3 class="item-inner-title">Barbershop</h3>
-									<p class="item-inner-text">Сайт салона красоты. Для мужчин, да.</p>
+									<p class="subtitle">Сайт салона красоты. Для мужчин, да.</p>
 									<a class="item-inner-btn" href="#">9900 руб.</a>
 								</div>
 							</li>
 							<li class="catalogue-item"><a href="#"><img src="img/img-mishka.jpg" width="360" height="577" alt="MISHKA"></a>
 								<div class="catalogue-inner">
 									<h3 class="item-inner-title">Mishka</h3>
-									<p class="item-inner-text">Интернет-магазин вязаных игрушек</p>
+									<p class="subtitle">Интернет-магазин вязаных игрушек</p>
 									<a class="item-inner-btn" href="#">9900 руб.</a>
 								</div>
 							</li>
 							<li class="catalogue-item"><a href="#"><img src="img/img-aplus.jpg" width="360" height="577" alt="A PLUS"></a>
 								<div class="catalogue-inner">
 									<h3 class="item-inner-title">A plus</h3>
-									<p class="item-inner-text">Лендинг курсов повышения квалификации</p>
+									<p class="subtitle">Лендинг курсов повышения квалификации</p>
 									<a class="item-inner-btn" href="#">9900 руб.</a>
 								</div>
 							</li>
@@ -177,7 +176,7 @@
 								</a>
 								<div class="catalogue-inner">
 									<h3 class="item-inner-title">Kvast</h3>
-									<p class="item-inner-text">Промо-сайт производителя крафтового кваса</p>
+									<p class="subtitle">Промо-сайт производителя крафтового кваса</p>
 									<a class="item-inner-btn" href="#">9900 руб.</a>
 								</div>
 							</li>
@@ -204,7 +203,7 @@
 					<div class="contacts">
 						<img src="img/map.jpg" alt="Карта">
 						<div class="contacts-address">
-				<h2 class="address-subtitle">Nёrd's design studio</h2>
+				<h2 class="subtitle">Nёrd's design studio</h2>
 				<p class="address">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p> 
 				<a href="tel:+78122757575" class="contacts-tel">тел. +7(812) 275-75-75</a>
 				<a href="#" class="button write-us-button">Напишите нам</a> 
