@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Nerds</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<header class="main-header">
+		<a class="logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="67" alt="Логотип Nerds"></a>
+		<nav class="navigation">
+			<ul class="navigation-list">
+				<li>
+					<a class="navigation-item" href="index.html">Студия</a>
+				</li>
+				<li>
+					<a class="navigation-item" href="#">Клиенты</a>
+				</li>
+				<li>
+					<a class="navigation-item navigation-current">Магазин</a>
+				</li>
+				<li>
+					<a class="navigation-item" href="#">Контакты</a>
+				</li>
+			</ul>
+			<div class="cart">
+				<a href="#">Корзина</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="headline">
+			<h1 class="page-headline">Магазин готовых шаблонов</h1>
+		</div>
+		
+		<section class="filters">
+			<h2 class="visually-hidden">Фильтр шаблонов</h2>
+			<form action="#" method="post" name="template-filter">
+				<fieldset class="price">
+					<legend class="subtitle filter-headline">Стоимость</legend>	
+					<ul>
+						<li>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="toggle-min"></div>
+									<div class="toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									от<input type="text" name="min-price" value="0">
+									до<input type="text" name="max-price" value="15000">
+								</div>
+							</div>
+						</li>
+						<li>
+							<label for="price-0">От</label>
+							<input type="text" name="price-0" id="price-0">
+						</li>
+						<li>
+							<label for="price-15000">До</label>
+							<input type="text" name="price-15000" id="price-15000">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="grid">
+					<legend class="subtitle filter-headline">Сетка</legend> 
+					<ul>
+						<li>
+							<input type="radio" name="radiobutton-grid" value="adaptive" id="adaptive-radio" checked>
+							<label for="adaptive-radio">Адаптивная</label>
+						</li>
+						<li>
+							<input type="radio" name="radiobutton-grid" value="fixed" id="fixed-radio">
+							<label for="adaptive-radio">Фиксированная</label>
+						</li>
+						<li>
+							<input type="radio" name="radiobutton-grid" value="flexible" id="flexible-radio">
+							<label for="flexible-radio">Резиновая</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="features">
+					<legend class="subtitle filter-headline">Особенности</legend> 
+					<ul>
+						<li>
+							<input type="checkbox" name="checkbox-slider" id="checkbox-slider" checked>
+							<label for="checkbox-slider">Слайдер</label>
+						</li>
+						<li>
+							<input type="checkbox" name="checkbox-advantages" id="checkbox-advantages">
+							<label for="checkbox-advantages">Блок преимуществ</label>
+						</li>
+						<li>
+							<input type="checkbox" name="checkbox-news" id="checkbox-news" checked>
+							<label for="checkbox-news">Новости</label>
+						</li>
+						<li>
+							<input type="checkbox" name="checkbox-gallery" id="checkbox-gallery">
+							<label for="checkbox-gallery">Галерея</label>
+						</li>
+						<li>
+							<input type="checkbox" name="checkbox-cart" id="checkbox-cart">
+							<label for="checkbox-cart">Корзина</label>
+						</li>
+					</ul>			
+				</fieldset>
+				<input type="submit" name="Показать"> 
+			</form>	
+    </section>
+
+    <section class="sorter">
+      <p class="subtitle sorter-headline">Сортировать</p>
+      <ul class="sorter-list">
+        <li>
+         <a class="sorter-item sorter-current">По цене</a>
+       </li>
+       <li>
+         <a class="sorter-item" href="#">По типу</a>
+       </li>
+       <li>
+         <a class="sorter-item" href="#">По названию</a>
+       </li>
+       <li>
+         <a class="sorter-btn" href="#">down</a>
+       </li>			
+       <li>
+         <a class="sorter-btn" href="#">up</a>
+       </li>
+     </ul> 
+   </section>
+
+
+   <section class="catalogue">
+     <ul class="catalogue-list">
+      <li class="catalogue-item">
+       <a href="#"><img src="img/img-sedona.jpg" width="360" height="577" alt="SEDONA"></a>
+       <div class="item-inner">
+        <h3 class="subtitle">Sedona</h3>
+        <p class="description">Информационный сайт для туристов></p>
+        <a class="item-inner-btn" href="#">9900 руб.</a>
+      </div>
+    </li>
+    <li class="catalogue-item">
+     <a href="#"><img src="img/img-pink.jpg" width="360" height="577" alt="PINK APP"></a>
+     <div class="catalogue-item-inner">
+      <h3 class="subtitle">Pink app</h3>
+      <p class="description">Продуктовый лендинг приложения для iOS и Android</p>
+      <a class="item-inner-btn" href="#">9900 руб.</a>
+    </div>
+  </li>
+  <li class="catalogue-item">
+   <a href="#"><img src="img/img-barbershop.jpg" width="360" height="577" alt="BORODINSKI"></a>
+   <div class="catalogue-item-inner">
+    <h3 class="subtitle">Barbershop</h3>
+    <p class="description">Сайт салона красоты. Для мужчин, да.</p>
+    <a class="item-inner-btn" href="#">9900 руб.</a>
+  </div>
+</li>
+<li class="catalogue-item"><a href="#"><img src="img/img-mishka.jpg" width="360" height="577" alt="MISHKA"></a>
+ <div class="catalogue-inner">
+  <h3 class="subtitle">Mishka</h3>
+  <p class="description">Интернет-магазин вязаных игрушек</p>
+  <a class="item-inner-btn" href="#">9900 руб.</a>
+</div>
+</li>
+<li class="catalogue-item"><a href="#"><img src="img/img-aplus.jpg" width="360" height="577" alt="A PLUS"></a>
+ <div class="catalogue-inner">
+  <h3 class="subtitle">A plus</h3>
+  <p class="description">Лендинг курсов повышения квалификации</p>
+  <a class="item-inner-btn" href="#">9900 руб.</a>
+</div>
+</li>
+<li class="catalogue-item">
+ <a href="#"><img src="img/img-kvast.jpg" width="360" height="577" alt="KVAST">
+ </a>
+ <div class="catalogue-inner">
+  <h3 class="subtitle">Kvast</h3>
+  <p class="description">Промо-сайт производителя крафтового кваса</p>
+  <a class="item-inner-btn" href="#">9900 руб.</a>
+</div>
+</li>
+</ul> 
+
+<ul class="pagination">
+  <li>
+   <a class="pagination-number pagination-current">1</a>
+ </li>
+ <li>
+   <a class="pagination-number" href="#">2</a> 
+ </li>
+ <li>
+   <a class="pagination-number" href="#">3</a>
+ </li>
+ <li>
+   <a class="pagination-next" href="#">Следующая</a>
+ </li>
+</ul>
+</section>
+</main>	
+
+<footer class="main-footer">
+  <div class="contacts">
+   <img src="img/map.jpg" alt="Карта">
+   <div class="contacts-address">
+    <h2 class="subtitle">Nёrd's design studio</h2>
+    <p class="address">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p> 
+    <a href="tel:+78122757575" class="contacts-tel">тел. +7(812) 275-75-75</a>
+    <a href="#" class="button write-us-button">Напишите нам</a> 
+  </div>
+			<!-- <div class="write-inner">
+				<p class="write-inner-headline">НАПИШИТЕ НАМ</p>
+				<form class="write-inner-form" action="#" method="post">
+					<label for="name-field">Ваше имя</label>
+					<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+					<label for="email-field">Ваш e-mail</label>
+					<input type="text" name="e-mail" id="email-field" placeholder="Для отправки ответа">
+					<label for="write-space">Текст письма</label>
+					<textarea name="write-field" id="write-space" placeholder="В свободной форме" rows="4"></textarea>
+					<input class="button write-submit-button" type="submit" name="submit-button" value="ОТПРАВИТЬ">			
+				</form>
+			</div> -->
+			<div class="socialmedia">	
+				<ul class="socialmedia-list">
+					<li>
+						<a class="socialmedia-logo socialmedia-logo-vk" href="#">Вконтакте</a>
+					</li>
+					<li>
+						<a class="socialmedia-logo socialmedia-logo-fb" href="#">Фейсбук</a>
+					</li>
+					<li>
+						<a class="socialmedia-logo socialmedia-logo-inst" href="#">Инстаграм</a>
+					</li>    	
+				</ul>
+				<div class="socialmedia-promo">
+					<p class="socialmedia-headline">Давайте дружить, это выгодно!</p>
+					<p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
