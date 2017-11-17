@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400; 
+	color: #000000;
+	
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+.main-header {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500; 
+	text-transform: uppercase;
+
+	background-color: #eeeeee;
+}
+.navigation-list {
+	list-style: none;
+}
+.main-header a,
+.contacts-address a {
+	color: #000000;
+}
+.main-header a:hover,
+.main-header a:focus {
+	color: #fb565a;
+}
+.main-header a:active {
+	color: #a6a6a6;
+}
+.slider .headline {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500; 
+}
+
+.indicator,
+.our-services,
+.services-list,
+.partners,
+.social-media-list {
+	list-style: none;
+}
+.button,
+.contacts-address .button {
+	/*font: inherit;*/
+
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: center;
+
+	background-color: #fb565a;
+	border: none;
+	border-radius: 
+}
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+.button:active {
+	background-color: #fb565a;
+}
+.button-green {
+	background-color: #00ca74;
+}
+.button-green:hover,
+.button-green:focus {
+	background-color: #00bc6c;
+}
+.button-green:active {
+	background-color: #00aa62;
+}
+.button-yellow {
+	background-color: #efc84a;
+}
+.button-yellow:hover,
+.button-yellow:focus {
+	background-color: #eab534;
+}
+.button-yellow:active {
+	background-color: #e5a722;
+}
+.main-footer {
+	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
+	/*background-position:*/ 
+}
+.contacts-address .subtitle {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500; 
+	text-transform: uppercase;
+}
+.contacts-address .address {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+}
+.contacts-address a {
+	font: inherit;
+}
+
+.write-inner .headline {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500; 
+}
+.write-inner label {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+}
+.write-inner input {
+
+
+}
