@@ -18,7 +18,7 @@ a {
 .main-header {
 	font-size: 16px;
 	line-height: 30px;
-	font-weight: 500; 
+	font-weight: 400; 
 	text-transform: uppercase;
 
 	background-color: #eeeeee;
@@ -37,10 +37,13 @@ a {
 .main-header a:active {
 	color: #a6a6a6;
 }
+.slider {
+	background-color: #eeeeee; 
+}
 .slider .headline {
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: 500; 
+	font-weight: 400; 
 }
 
 .indicator,
@@ -52,7 +55,7 @@ a {
 }
 .button,
 .contacts-address .button {
-	/*font: inherit;*/
+	font: inherit;
 
 	color: #ffffff;
 	text-transform: uppercase;
@@ -70,6 +73,7 @@ a {
 .button:active {
 	background-color: #fb565a;
 }
+
 .button-green {
 	background-color: #00ca74;
 }
@@ -90,6 +94,27 @@ a {
 .button-yellow:active {
 	background-color: #e5a722;
 }
+
+
+.services-headline {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.promo-subtitle {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400; 
+	text-transform: uppercase;
+}
+.efficiency-percent {
+	font-size: 45px;
+	line-height: 10.06px;
+	font-weight: 400; 
+}
+
+
 .main-footer {
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
@@ -110,17 +135,53 @@ a {
 	font: inherit;
 }
 
-.write-inner .headline {
+.promo-headline {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: 500; 
+	font-weight: 400; 
 }
-.write-inner label {
-	font-size: 16px;
+.promo-subtitle {
+
+}
+
+.write-inner .headline {
+	font: inherit;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 400; 
+}
+
+.write-inner label,
+.write-inner input[type="text"],
+.write-inner textarea {
+	font: inherit;
+	/*font-size: 16px;
 	line-height: 18px;
-	font-weight: 500;
+	font-weight: 500;*/
 }
-.write-inner input {
 
+.write-inner input:focus,
+.write-inner textarea:focus {
+	border-color: #000000;
+	color: #000000;
+}
+.write-inner input:invalid,
+.write-inner textarea:invalid {
+	border-color: #e74246;
+	color: #e74246;
+}
 
+/*input:focus::-webkit-input-placeholder,
+/*input:focus::-moz-placeholder,
+input:focus:-ms-input-placeholder,*/
+textarea:focus::-webkit-input-placeholder,
+/*textarea:focus::-moz-placeholder,
+textarea:focus:-ms-input-placeholder*/ {
+	color: transparent;
+}*/
+
+.social-media-headline {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
 }
