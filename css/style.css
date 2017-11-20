@@ -37,10 +37,13 @@ a {
 .main-header a:active {
 	color: #a6a6a6;
 }
-.slider {
+.slider,
+.headline {
+	margin: 0;
 	background-color: #eeeeee; 
 }
-.slider .headline {
+.slider .headline,
+.page-headline {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 400; 
@@ -95,7 +98,6 @@ a {
 	background-color: #e5a722;
 }
 
-
 .services-headline {
 	font-size: 55px;
 	line-height: 55px;
@@ -123,7 +125,7 @@ a {
 .contacts-address .subtitle {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: 500; 
+	font-weight: 400; 
 	text-transform: uppercase;
 }
 .contacts-address .address {
@@ -185,3 +187,69 @@ textarea:focus:-ms-input-placeholder*/ {
 	line-height: 36px;
 	font-weight: 400;
 }
+
+/*ФИЛЬТРЫ БОКОВАЯ ПАНЕЛЬ*/
+.filters fieldset {
+	border: none;
+}
+.filters legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.price-range,
+.grid-list,
+.features-list,
+.sorter-list {
+	list-style: none;
+	line-height: 20px;
+}
+
+.input-radiobutton + label,
+.input-checkbox + label {
+
+	background-color: #ffffff;
+}
+.input-radiobutton:hover + label,
+.input-radiobutton:focus + label,
+.input-checkbox:hover + label,
+.input-checkbox:focus + label {
+	color: #4d4d4d;
+}
+.input-radiobutton:disabled + label,
+.input-checkbox:disabled + label {
+	color: #ededed;
+	opacity: 0.5;
+}
+
+.input-submit {
+	font: inherit;
+
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: center;
+
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 0;
+}
+/*СОРТИРОВКА*/
+.sorter-headline {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.sorter-item {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.sorter-item:hover,
+.sorter-item:focus {
+
+}
+

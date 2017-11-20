@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Nerds</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -38,10 +39,10 @@
 		
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр шаблонов</h2>
-			<form action="#" method="post" name="template-filter">
+			<form class="filter" action="#" method="post" name="template-filter">
 				<fieldset class="price">
-					<legend class="subtitle filter-headline">Стоимость</legend>	
-					<ul>
+					<legend class="subtitle filter-headline"><b>Стоимость</b></legend>	
+					<ul class="price-range">
 						<li>
 							<div class="range-controls">
 								<div class="scale">
@@ -65,8 +66,8 @@
 					</ul>
 				</fieldset>
 				<fieldset class="grid">
-					<legend class="subtitle filter-headline">Сетка</legend> 
-					<ul>
+					<legend class="subtitle filter-headline"><b>Сетка</b></legend> 
+					<ul class="grid-list">
 						<li>
 							<input class="visually-hidden input-radiobutton" type="radio" name="radiobutton-grid" value="adaptive" id="adaptive-radio" checked>
 							<label for="adaptive-radio">Адаптивная</label>
@@ -82,8 +83,8 @@
 					</ul>
 				</fieldset>
 				<fieldset class="features">
-					<legend class="subtitle filter-headline">Особенности</legend> 
-					<ul>
+					<legend class="subtitle filter-headline"><b>Особенности</b></legend> 
+					<ul class="features-list">
 						<li>
 							<input class="visually-hidden input-checkbox" type="checkbox" name="checkbox-slider" id="checkbox-slider" checked>
 							<label for="checkbox-slider">Слайдер</label>
@@ -106,7 +107,7 @@
 						</li>
 					</ul>			
 				</fieldset>
-				<input class="visually-hidden input-submit" type="submit" name="Показать"> 
+				<input class="visually-hidden input-submit" type="submit" name="filters-submit" value="Показать"> 
 			</form>	
 		</section>
 
@@ -137,7 +138,7 @@
 					<a href="#"><img src="img/img-sedona.jpg" width="360" height="577" alt="SEDONA"></a>
 					<div class="item-inner">
 						<h3 class="subtitle">Sedona</h3>
-						<p class="description">Информационный сайт для туристов></p>
+						<p class="description">Информационный сайт для туристов</p>
 						<a class="item-inner-btn" href="#">9900 руб.</a>
 					</div>
 				</li>
