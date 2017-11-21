@@ -16,14 +16,14 @@ a {
 	color: #000000;
 }
 fieldset {
-		border: none;
-	}
+	border: none;
+}
 legend {
-		font-size: 18px;
-		line-height: 30px;
-		font-weight: bold;
-		text-transform: uppercase;
-	}
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
 .subtitle {
 	text-transform: uppercase;
 }
@@ -219,7 +219,7 @@ textarea:focus:-ms-input-placeholder*/ {
 	.input-checkbox {
 		display: none;
 	}
-label {
+	label {
 		position: relative;
 		padding-left: 40px;
 		line-height: 50px;
@@ -299,44 +299,48 @@ label {
 		opacity: 1;
 	}
 	/*----------------------------------CATALOGUE------------------------------*/
-.catalogue-item {
-	width: 360px;
-	height: 690px;
-}
-.catalogue-item:hover,
-.catalogue-item: focus {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+	.catalogue-item {
+		width: 360px;
+		height: 690px;
+	}
+	.catalogue-item:hover,
+	.catalogue-item: focus {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}
 
-.catalogue-inner {
-	width: 360px;
-	height: 230px;
-	background-color: #eeeeee;
-	text-align: center;
-	vertical-align: middle;
-}
-.description {
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 400;
-}
+	.catalogue-inner {
+		width: 360px;
+		height: 230px;
+		background-color: #eeeeee;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.description {
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 400;
+	}
 
-/*-----------------------------------PAGINATION-----------------------------*/
-.pagination-number a {
-	background-color: #eeeeee;
-}
-.pagination-next a {
-	text-transform: uppercase;
-}
-.pagination-number a:hover,
-.pagination-number a:focus,
-.pagination-next a:hover,
-.pagination-next a:focus {
-	background-color: #dfdfdf;
-}
-.pagination-number a:active,
-.pagination-next a:active  {
-	opacity: 0.5;
-	box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+	/*-----------------------------------PAGINATION-----------------------------*/
+
+	.pagination {
+		display: inline-block;
+	}
+	.pagination-number a {
+		background-color: #eeeeee;
+	}
+	.pagination-next a {
+		text-transform: uppercase;
+	}
+	.pagination-number a:hover,
+	.pagination-number a:focus,
+	.pagination-next a:hover,
+	.pagination-next a:focus {
+		background-color: #dfdfdf;
+	}
+	.pagination-number a:active,
+	.pagination-next a:active  {
+		opacity: 0.5;
+		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
 
