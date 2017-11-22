@@ -269,6 +269,7 @@ input[type="radio"] + label {
 		line-height: 20px;
 		font-weight: normal;
 		padding-left: 40px;
+		background-repeat: no-repeat;
 	}
 input[type="checkbox"] + label::before,
 input[type="radio"] + label::before {
@@ -280,17 +281,22 @@ input[type="radio"] + label::before {
 
 input[type="checkbox"] + label::before {
 		background-image: url(../img/checkbox-off.png);
+		background-repeat: no-repeat;
 	}
 
 input[type="radio"] + label::before {
 		background-image: url(../img/radio-off.png);
+		background-repeat: no-repeat;
+
 	}
 
 input[type="checkbox"]:checked + label::before {
 	background-image: url(../img/checkbox-on.png);
+	background-repeat: no-repeat;
 }
 input[type="radio"]:checked + label::before {
 	background-image: url(../img/radio-on.png);
+	background-repeat: no-repeat;
 }
 
 input[type="submit"] {
@@ -338,17 +344,34 @@ input[type="submit"]:active {
 	.catalogue-item {
 		width: 360px;
 	}
-	.catalogue-item:hover,
-	.catalogue-item: focus {
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	}
-	
+	.catalogue-link::before {
+		content: "";
+		height: 40px;
+		width: 360px;
+		display: block;
+		background-image: url(../img/browser.png);
+		background-repeat: no-repeat;
 
-	.catalogue-inner {
+	}
+.catalogue-link:hover::before,
+.catalogue-link:focus::before {
+	opacity: 0.5;
+}	
+/*.catalogue-item:hover,
+.catalogue-item:focus {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}*/
+.catalogue-link:hover + .catalogue-inner {
+	display: block;
+}	
+
+.catalogue-inner {
 		width: 360px;
 		background-color: #eeeeee;
 		text-align: center;
 		vertical-align: middle;
+
+	  display: none;
 	}
 	.description {
 		font-size: 16px;
@@ -356,26 +379,41 @@ input[type="submit"]:active {
 		font-weight: 400;
 	}
 
-	/*-----------------------------------PAGINATION-----------------------------*/
+	/*----------------------------------PAGINATION-----------------------------*/
 
 	.pagination {
-		display: inline-block;
+		display: flex;
+		justify-content: center;
+		align-items: center;	
 	}
-	.pagination-number a {
+
+	.pagination-number,
+	.pagination-next  {
 		background-color: #eeeeee;
-	}
-	.pagination-next a {
 		text-transform: uppercase;
+		font: inherit;
+		font-size: 16px;
+		line-height: 18px;
+
+		min-height: 50px;
+		min-width: 50px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;	
+
 	}
-	.pagination-number a:hover,
-	.pagination-number a:focus,
-	.pagination-next a:hover,
-	.pagination-next a:focus {
+	
+	.pagination-number:hover,
+	.pagination-number:focus,
+	.pagination-next:hover,
+	.pagination-next:focus {
 		background-color: #dfdfdf;
 	}
 	.pagination-number a:active,
 	.pagination-next a:active  {
 		opacity: 0.5;
+		color: #bfbfbf;
 		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
 	}
 
