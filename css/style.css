@@ -233,8 +233,8 @@ fieldset {
 	border-color: #000000;
 	color: #000000;
 }
-.write-inner input:invalid,
-.write-inner textarea:invalid {
+.write-inner input::invalid,
+.write-inner textarea::invalid {
 	border-color: #e74246;
 	color: #e74246;
 }
@@ -342,6 +342,7 @@ input[type="submit"]:active {
 	.catalogue-item: focus {
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	}
+	
 
 	.catalogue-inner {
 		width: 360px;
