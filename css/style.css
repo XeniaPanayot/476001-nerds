@@ -18,7 +18,8 @@ a {
 fieldset {
 	border: none;
 }
-legend {
+.subtitle legend {
+	font-family: Roboto bold, Arial, sans-serif;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
@@ -75,7 +76,12 @@ legend {
 .page-headline {
 	font-size: 55px;
 	line-height: 55px;
-	font-weight: 400; 
+	font-weight: normal; 
+}
+.promo-text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
 }
 /*----------------------------------BUTTONS--------------------------------*/
 
@@ -87,11 +93,11 @@ legend {
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
-	vertical-align: center;
+	vertical-align: middle;
 
 	background-color: #fb565a;
 	border: none;
-	border-radius: 
+	border-radius: 2px; 
 }
 .button:hover,
 .button:focus {
@@ -99,6 +105,7 @@ legend {
 }
 .button:active {
 	background-color: #fb565a;
+	color: #d7373b;
 }
 
 .button-green {
@@ -110,6 +117,7 @@ legend {
 }
 .button-green:active {
 	background-color: #00aa62;
+	color: #d7373b;
 }
 .button-yellow {
 	background-color: #efc84a;
@@ -120,24 +128,41 @@ legend {
 }
 .button-yellow:active {
 	background-color: #e5a722;
+	color: #d7373b;
 }
 /*-------------------------------INDEX SERVICES----------------------------*/
 .services-headline {
-	font-size: 55px;
-	line-height: 55px;
-	font-weight: 400;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 .promo-subtitle {
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 400; 
+	font-weight: bold; 
 	text-transform: uppercase;
 }
 .efficiency-percent {
 	font-size: 45px;
 	line-height: 10.06px;
-	font-weight: 400; 
+	font-weight: bold; 
+}
+.efficiency-legend {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+}
+.promo-headline {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: medium;
+
+}
+.promo-text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
 }
 /*-----------------------------FOOTER---------------------------------*/
 
@@ -145,17 +170,17 @@ legend {
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	/*background-position:*/ 
-}
-.contacts-address .subtitle {
+}/*
+.contacts-address */.subtitle {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: 400; 
+	font-weight: bold; 
 	text-transform: uppercase;
 }
 .contacts-address .address {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: 400;
+	font-weight: normal;
 }
 .contacts-address a {
 	font: inherit;
@@ -169,7 +194,18 @@ legend {
 .promo-subtitle {
 
 }
+.socialmedia-headline {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold; 
 
+}
+.socialmedia-text {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+}
+/*-----------------------------INNER---------------------------*/
 .write-inner .headline {
 	font: inherit;
 	font-size: 45px;
@@ -177,17 +213,23 @@ legend {
 	font-weight: 400; 
 }
 
-.write-inner label,
+.write-inner label {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+}
 .write-inner input[type="text"],
 .write-inner textarea {
-	font: inherit;
-	/*font-size: 16px;
+	font-size: 16px;
 	line-height: 18px;
-	font-weight: 500;*/
+	font-weight: normal;
+	opacity: 0.5;
 }
 
 .write-inner input:focus,
-.write-inner textarea:focus {
+.write-inner textarea:focus,
+.write-inner input:hover,
+.write-inner textarea:hover {
 	border-color: #000000;
 	color: #000000;
 }
@@ -206,15 +248,17 @@ textarea:focus:-ms-input-placeholder*/ {
 	color: transparent;
 	}*/
 
-	.social-media-headline {
-		font-size: 36px;
-		line-height: 36px;
-		font-weight: 400;
-	}
+
 
 	/*--------------------------ФИЛЬТРЫ БОКОВАЯ ПАНЕЛЬ---------------------------*/
 
 	/*-------------------------RADIOBUTTON & CHECKBOX---------------------------*/
+legend .subtitle {
+		font-size: 18px;
+		line-height: 30px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
 	.input-radiobutton,
 	.input-checkbox {
 		display: none;
@@ -223,6 +267,12 @@ textarea:focus:-ms-input-placeholder*/ {
 		position: relative;
 		padding-left: 40px;
 		line-height: 50px;
+	}
+	label .price {
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: normal;
+		text-transform: uppercase;
 	}
 
 	.input-radiobutton + label::before {
@@ -263,11 +313,11 @@ textarea:focus:-ms-input-placeholder*/ {
 		color: #000000;
 		text-transform: uppercase;
 		text-align: center;
-		vertical-align: center;
+		vertical-align: middle;
 
 		background-color: #eeeeee;
 		border: none;
-		border-radius: 0;
+		border-radius: 2px;
 	}
 	.input-submit:hover,
 	.input-submit:focus {
@@ -287,7 +337,7 @@ textarea:focus:-ms-input-placeholder*/ {
 	.sorter-item {
 		font-size: 14px;
 		line-height: 18px;
-		font-weight: 400;
+		font-weight: normal;
 		text-transform: uppercase;
 		opacity: 0.5;
 	}
