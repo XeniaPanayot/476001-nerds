@@ -164,6 +164,17 @@ fieldset {
 	line-height: 24px;
 	font-weight: normal;
 }
+/*--------------------------------------PARTNER'S LOGO------------------------- */
+.partners-logo {
+	opacity: 0.2;
+}
+.partners-logo:hover,
+.partners-logo:focus {
+	opacity: 1;
+}
+.partners-logo:active {
+	opacity: 0.1;
+}
 /*-----------------------------FOOTER---------------------------------*/
 
 .main-footer {
@@ -240,66 +251,64 @@ fieldset {
 }
 
 /*input:focus::-webkit-input-placeholder,
-/*input:focus::-moz-placeholder,
-input:focus:-ms-input-placeholder,*/
+input:focus::-moz-placeholder,
+input:focus:-ms-input-placeholder,
 textarea:focus::-webkit-input-placeholder,
-/*textarea:focus::-moz-placeholder,
-textarea:focus:-ms-input-placeholder*/ {
+textarea:focus::-moz-placeholder,
+textarea:focus:-ms-input-placeholder {
 	color: transparent;
 	}*/
-
-
 
 	/*--------------------------ФИЛЬТРЫ БОКОВАЯ ПАНЕЛЬ---------------------------*/
 
 	/*-------------------------RADIOBUTTON & CHECKBOX---------------------------*/
-legend .subtitle {
+	legend .subtitle {
 		font-size: 18px;
 		line-height: 30px;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
-input[type="checkbox"],
-input[type="radio"] {
+	input[type="checkbox"],
+	input[type="radio"] {
 		display: none;
 	}
-input[type="checkbox"] + label,
-input[type="radio"] + label {
+	input[type="checkbox"] + label,
+	input[type="radio"] + label {
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: normal;
 		padding-left: 40px;
 		background-repeat: no-repeat;
 	}
-input[type="checkbox"] + label::before,
-input[type="radio"] + label::before {
+	input[type="checkbox"] + label::before,
+	input[type="radio"] + label::before {
 		content: "";
 		display: inline-block;
 		height: 25px; 
 		width:25px;
 	}
 
-input[type="checkbox"] + label::before {
+	input[type="checkbox"] + label::before {
 		background-image: url(../img/checkbox-off.png);
 		background-repeat: no-repeat;
 	}
 
-input[type="radio"] + label::before {
+	input[type="radio"] + label::before {
 		background-image: url(../img/radio-off.png);
 		background-repeat: no-repeat;
 
 	}
 
-input[type="checkbox"]:checked + label::before {
-	background-image: url(../img/checkbox-on.png);
-	background-repeat: no-repeat;
-}
-input[type="radio"]:checked + label::before {
-	background-image: url(../img/radio-on.png);
-	background-repeat: no-repeat;
-}
+	input[type="checkbox"]:checked + label::before {
+		background-image: url(../img/checkbox-on.png);
+		background-repeat: no-repeat;
+	}
+	input[type="radio"]:checked + label::before {
+		background-image: url(../img/radio-on.png);
+		background-repeat: no-repeat;
+	}
 
-input[type="submit"] {
+	input[type="submit"] {
 		font: inherit;
 
 		color: #000000;
@@ -311,11 +320,11 @@ input[type="submit"] {
 		border: none;
 		border-radius: 2px;
 	}
-input[type="submit"]:hover,
-input[type="submit"]:focus {
+	input[type="submit"]:hover,
+	input[type="submit"]:focus {
 		background-color: #dfdfdf;
 	}
-input[type="submit"]:active {
+	input[type="submit"]:active {
 		opacity: 0.5;
 		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5)
 	}
@@ -326,18 +335,18 @@ input[type="submit"]:active {
 		font-weight: bold;
 		text-transform: uppercase;
 	}
-.sorter-item {
+	.sorter-item {
 		font-size: 14px;
 		line-height: 18px;
 		font-weight: normal;
 		text-transform: uppercase;
 		opacity: 0.5;
 	}
-.sorter-item:hover,
-.sorter-item:focus {
+	.sorter-item:hover,
+	.sorter-item:focus {
 		opacity: 0.9;
 	}
-.sorter-item:active {
+	.sorter-item:active {
 		opacity: 1;
 	}
 	/*----------------------------------CATALOGUE------------------------------*/
@@ -353,70 +362,69 @@ input[type="submit"]:active {
 		background-repeat: no-repeat;
 
 	}
-.catalogue-link:hover::before,
-.catalogue-link:focus::before {
-	opacity: 0.5;
-}	
+	.catalogue-link:hover::before,
+	.catalogue-link:focus::before {
+		opacity: 0.5;
+	}	
 /*.catalogue-item:hover,
 .catalogue-item:focus {
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	}*/
-.catalogue-link:hover + .catalogue-inner {
-	display: block;
-}	
+		}*/
+		.catalogue-link:hover + .catalogue-inner {
+			display: block;
+		}	
 
-.catalogue-inner {
-		width: 360px;
-		background-color: #eeeeee;
-		text-align: center;
-		vertical-align: middle;
+		.catalogue-inner {
+			width: 360px;
+			background-color: #eeeeee;
+			text-align: center;
+			vertical-align: middle;
 
-	  display: none;
-	}
-	.description {
-		font-size: 16px;
-		line-height: 18px;
-		font-weight: 400;
-	}
+			display: none;
+		}
+		.description {
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: 400;
+		}
 
-	/*----------------------------------PAGINATION-----------------------------*/
+		/*----------------------------------PAGINATION-----------------------------*/
 
-	.pagination {
-		display: flex;
-		justify-content: center;
-		align-items: center;	
-	}
+		.pagination {
+			display: flex;
+			justify-content: center;
+			align-items: center;	
+		}
 
-	.pagination-number,
-	.pagination-next  {
-		background-color: #eeeeee;
-		text-transform: uppercase;
-		font: inherit;
-		font-size: 16px;
-		line-height: 18px;
+		.pagination-number,
+		.pagination-next  {
+			background-color: #eeeeee;
+			text-transform: uppercase;
+			font: inherit;
+			font-size: 16px;
+			line-height: 18px;
 
-		min-height: 50px;
-		min-width: 50px;
+			min-height: 50px;
+			min-width: 50px;
 
-		display: flex;
-		justify-content: space-between;
-		align-items: center;	
+			display: flex;
+			justify-content: space-between;
+			align-items: center;	
 
-	}
-	
-	.pagination-number:hover,
-	.pagination-number:focus,
-	.pagination-next:hover,
-	.pagination-next:focus {
-		background-color: #dfdfdf;
-	}
-	.pagination-number a:active,
-	.pagination-next a:active  {
-		opacity: 0.5;
-		color: #bfbfbf;
-		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
-	}
+		}
 
+		.pagination-number:hover,
+		.pagination-number:focus,
+		.pagination-next:hover,
+		.pagination-next:focus {
+			background-color: #dfdfdf;
+		}
+		.pagination-number a:active,
+		.pagination-next a:active  {
+			opacity: 0.5;
+			color: #bfbfbf;
+			box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
 
 	./*input-radiobutton,
 	.input-checkbox {
@@ -465,5 +473,5 @@ input[type="submit"]:active {
 	.input-checkbox:disabled + label {
 		color: #ededed;
 		opacity: 0.5;
-	}*/
+		}*/
 
