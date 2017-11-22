@@ -259,7 +259,127 @@ legend .subtitle {
 		font-weight: bold;
 		text-transform: uppercase;
 	}
-	.input-radiobutton,
+input[type="checkbox"],
+input[type="radio"] {
+		display: none;
+	}
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: normal;
+		padding-left: 40px;
+	}
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+		content: "";
+		display: inline-block;
+		height: 25px; 
+		width:25px;
+	}
+
+input[type="checkbox"] + label::before {
+		background-image: url(../img/checkbox-off.png);
+	}
+
+input[type="radio"] + label::before {
+		background-image: url(../img/radio-off.png);
+	}
+
+input[type="checkbox"]:checked + label::before {
+	background-image: url(../img/checkbox-on.png);
+}
+input[type="radio"]:checked + label::before {
+	background-image: url(../img/radio-on.png);
+}
+
+input[type="submit"] {
+		font: inherit;
+
+		color: #000000;
+		text-transform: uppercase;
+		text-align: center;
+		vertical-align: middle;
+
+		background-color: #eeeeee;
+		border: none;
+		border-radius: 2px;
+	}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+		background-color: #dfdfdf;
+	}
+input[type="submit"]:active {
+		opacity: 0.5;
+		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5)
+	}
+	/*---------------------------------SORTER--------------------------------*/
+	.sorter-headline {
+		font-size: 18px;
+		line-height: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+.sorter-item {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: normal;
+		text-transform: uppercase;
+		opacity: 0.5;
+	}
+.sorter-item:hover,
+.sorter-item:focus {
+		opacity: 0.9;
+	}
+.sorter-item:active {
+		opacity: 1;
+	}
+	/*----------------------------------CATALOGUE------------------------------*/
+	.catalogue-item {
+		width: 360px;
+	}
+	.catalogue-item:hover,
+	.catalogue-item: focus {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+
+	.catalogue-inner {
+		width: 360px;
+		background-color: #eeeeee;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.description {
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 400;
+	}
+
+	/*-----------------------------------PAGINATION-----------------------------*/
+
+	.pagination {
+		display: inline-block;
+	}
+	.pagination-number a {
+		background-color: #eeeeee;
+	}
+	.pagination-next a {
+		text-transform: uppercase;
+	}
+	.pagination-number a:hover,
+	.pagination-number a:focus,
+	.pagination-next a:hover,
+	.pagination-next a:focus {
+		background-color: #dfdfdf;
+	}
+	.pagination-number a:active,
+	.pagination-next a:active  {
+		opacity: 0.5;
+		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+
+	./*input-radiobutton,
 	.input-checkbox {
 		display: none;
 	}
@@ -306,91 +426,5 @@ legend .subtitle {
 	.input-checkbox:disabled + label {
 		color: #ededed;
 		opacity: 0.5;
-	}
-	.input-submit {
-		font: inherit;
-
-		color: #000000;
-		text-transform: uppercase;
-		text-align: center;
-		vertical-align: middle;
-
-		background-color: #eeeeee;
-		border: none;
-		border-radius: 2px;
-	}
-	.input-submit:hover,
-	.input-submit:focus {
-		background-color: #dfdfdf;
-	}
-	.input-submit:active {
-		opacity: 0.5;
-		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5)
-	}
-	/*---------------------------------SORTER--------------------------------*/
-	.sorter-headline {
-		font-size: 18px;
-		line-height: 18px;
-		font-weight: bold;
-		text-transform: uppercase;
-	}
-	.sorter-item {
-		font-size: 14px;
-		line-height: 18px;
-		font-weight: normal;
-		text-transform: uppercase;
-		opacity: 0.5;
-	}
-	.sorter-item:hover,
-	.sorter-item:focus {
-		opacity: 0.9;
-	}
-	.sorter-item:active {
-		opacity: 1;
-	}
-	/*----------------------------------CATALOGUE------------------------------*/
-	.catalogue-item {
-		width: 360px;
-		height: 690px;
-	}
-	.catalogue-item:hover,
-	.catalogue-item: focus {
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	}
-
-	.catalogue-inner {
-		width: 360px;
-		height: 230px;
-		background-color: #eeeeee;
-		text-align: center;
-		vertical-align: middle;
-	}
-	.description {
-		font-size: 16px;
-		line-height: 18px;
-		font-weight: 400;
-	}
-
-	/*-----------------------------------PAGINATION-----------------------------*/
-
-	.pagination {
-		display: inline-block;
-	}
-	.pagination-number a {
-		background-color: #eeeeee;
-	}
-	.pagination-next a {
-		text-transform: uppercase;
-	}
-	.pagination-number a:hover,
-	.pagination-number a:focus,
-	.pagination-next a:hover,
-	.pagination-next a:focus {
-		background-color: #dfdfdf;
-	}
-	.pagination-number a:active,
-	.pagination-next a:active  {
-		opacity: 0.5;
-		box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
-	}
+	}*/
 
