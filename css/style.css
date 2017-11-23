@@ -1,4 +1,4 @@
-/*-----------------------------------LAYOUT-----------------------------*/
+/*-----------------------------------Layout HEADER-----------------------------*/
 html,
 body {
 	min-width: 1440px;
@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	padding: 0 130px;
 	display: flex;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 .logo {
@@ -43,7 +43,27 @@ body {
 	padding: 0;
   width: 120px;
 }
+/*----------------------------Layout MAIN INDEX--------------------------*/
+.main-container {
+	
+}
+.slider-wrapper {
+	background-color: #eeeeee;
+}
+.slider {
+	width: 1160px;
+	margin: 0;
+	padding: 0 130px;
+  display: flex;
+}
+.slide-1 {
+   width: 400px;
+   flex-direction: column;
+   padding-bottom: 80px;
+}
+.services {
 
+}
 
 /*-----------------------------------GENERAL-----------------------------*/
 body {
