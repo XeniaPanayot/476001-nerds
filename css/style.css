@@ -1,3 +1,50 @@
+/*-----------------------------------LAYOUT-----------------------------*/
+html,
+body {
+	min-width: 1440px;
+	min-height: 2476px;
+}
+.header-container {
+	width: 1160px;
+	margin: 0;
+	padding: 0 130px;
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.logo {
+	min-width: 160px; 
+	min-height: 70px;
+	
+}
+.navigation {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	width: 870px;
+}
+
+.navigation-item a {
+	display: block;
+}
+
+.navigation-list  {  
+  margin: 0;
+	padding: 0;
+
+	width: 420px;	
+
+	display: flex;
+	align-items: baseline;
+	justify-content: space-around;
+}
+.cart {
+	margin: 0;
+	padding: 0;
+  width: 120px;
+}
+
+
 /*-----------------------------------GENERAL-----------------------------*/
 body {
 	margin: 0;
