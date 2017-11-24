@@ -3,15 +3,31 @@ html,
 body {
 	min-width: 1440px;
 	min-height: 2476px;
+
 }
+.visually-hidden {
+	display: none;
+}
+/*-------------------------------ЦЕНТРОВЩИКИ-----------------------------*/
 .header-container {
 	width: 1160px;
-	margin: 0;
-	padding: 0 130px;
+	margin: 0 auto;
+	padding: 0;
 	display: flex;
 	padding-bottom: 30px;
 }
+.slider {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0;
+}
+.section-container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0;
+}
 
+/*-------------------------------Layout HEADER---------------------*/
 .logo {
 	min-width: 160px; 
 	min-height: 70px;
@@ -44,25 +60,64 @@ body {
   width: 120px;
 }
 /*----------------------------Layout MAIN INDEX--------------------------*/
-.main-container {
-	
-}
 .slider-wrapper {
 	background-color: #eeeeee;
 }
-.slider {
-	width: 1160px;
-	margin: 0;
-	padding: 0 130px;
-  display: flex;
-}
+
 .slide-1 {
    width: 400px;
    flex-direction: column;
    padding-bottom: 80px;
 }
-.services {
 
+.our-services {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-item {
+	width: 300px;
+}
+.about-us {
+	display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.about-us p {
+	margin: 0;
+}
+.introduction {
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 384px;
+}
+.services-list {
+	margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 114px;
+  justify-content: space-between;
+}
+
+.efficiency {
+	min-width: 380px;
+	display: flex;
+  flex-direction: column;
+  min-height: 380px;
+  justify-content: space-between;
+  align-items: center;
+}
+.partners {
+	margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  min-height: 280px;
+  justify-content: space-between;
 }
 
 /*-----------------------------------GENERAL-----------------------------*/
@@ -134,11 +189,10 @@ fieldset {
 	color: #a6a6a6;
 }
 /*---------------------------------SLIDER----------------------------------*/
-.slider,
-.headline {
-	margin: 0;
+/*.slider{
+	
 	background-color: #eeeeee; 
-}
+}*/
 .slider .headline,
 .page-headline {
 	font-size: 55px;
