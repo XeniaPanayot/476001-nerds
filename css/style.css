@@ -173,7 +173,22 @@ p.address {
   padding-top: 72px;
   padding-bottom: 72px;
 }
-
+/*-------------------------Layout CATALOGUE MAIN-------------------------*/
+.headline {
+	background: #eeeeee;
+	padding-top: 74px;
+  padding-bottom: 115px;
+}
+.page-headline {
+	margin: 0;
+}
+.sorter {
+	display: flex;
+}
+.sorter-list {
+	margin: 0;
+	padding: 0;
+}
 
 /*-----------------------------------GENERAL-----------------------------*/
 body {
