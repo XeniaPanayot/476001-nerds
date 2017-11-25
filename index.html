@@ -10,7 +10,7 @@
 
 <body>
 	<header class="main-header">
-		<div class="header-container">
+		<div class="header-container container">
 		 <a class="logo">
 			 <img src="img/nerds-logo.png" width="160" height="67" alt="Логотип Nerds"></a>
 		 <nav class="navigation">
@@ -38,7 +38,7 @@
 
 		<main class="main-container">
 			<div class="slider-wrapper">
-			<div class="slider">
+			<div class="slider container">
 				<div class="slide-1">
 					<p class="headline">Долго, дорого, скурпулезно.</p>
 					<p class="promo-text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
@@ -75,7 +75,7 @@
 			</div>
 
 
-     <div class="section-container">
+     <div class="section-container container">
 			<section class="services">
 				<h2 class="visually-hidden">Услуги студии Nerd's</h2>
 				<ul class="our-services">
@@ -156,19 +156,25 @@
 		</main>
 
 		<footer class="main-footer">
+			<div class="contacts-wrapper">
 			<div class="contacts">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<<!-- img src="img/map.jpg" width="1440" height="418" alt="Офис компании по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"> -->
 				<div class="contacts-address">
 					<h2 class="subtitle">Nёrd's design studio</h2>
 					<p class="address">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p> 
 					<a href="tel:+78122757575" class="tel">тел. +7(812) 275-75-75</a>
 					<a href="#" class="button write-us-button">Напишите нам</a> 
 				</div>
+				<div class="map-marker">
+					<img src="img/map-marker.png" width="231" height="190" alt="Nёrds">
+				</div>
+			</div>
+			</div>
 
 				<div class="write-inner">
 					<h2 class="headline">Напишите нам</h2>
 					<form class="write-inner" action="#" method="post">
+						<div class="inner-data">
 						<label for="name-field">Ваше имя</label>
 						<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
 						<label for="email-field">Ваш e-mail</label>
@@ -179,7 +185,7 @@
 					</form>
 				</div> 
 
-				<div class="social-media">	
+				<div class="social-media container">	
 					<ul class="social-media-list">
 						<li>
 							<a class="social-media-logo social-media-logo-vk" href="#">Вконтакте</a>

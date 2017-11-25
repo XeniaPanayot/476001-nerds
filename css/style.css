@@ -8,23 +8,24 @@ body {
 .visually-hidden {
 	display: none;
 }
-/*-------------------------------ЦЕНТРОВЩИКИ-----------------------------*/
-.header-container {
-	width: 1160px;
-	margin: 0 auto;
+p {
+	margin: 0;
 	padding: 0;
+}
+/*-------------------------------ЦЕНТРОВЩИК И ОТСТУПЫ КРУПНЫХ ЭЛЕМЕНТОВ-----------------------------*/
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
 	display: flex;
+}
+.header-container { 
 	padding-bottom: 30px;
 }
-.slider {
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0;
-}
 .section-container {
-	width: 1160px;
-	margin: 0 auto;
-	padding: 0;
+	flex-direction: column;
 }
 
 /*-------------------------------Layout HEADER---------------------*/
@@ -119,6 +120,60 @@ body {
   min-height: 280px;
   justify-content: space-between;
 }
+
+/*------------------------------Layout FOOTER----------------------------*/
+.contacts-wrapper {
+	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.contacts {
+	display: flex;
+	width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contacts-address {
+  display: flex;
+  flex-direction: column;
+    /* min-width: 300px; */
+  width: 320px;
+  min-height: 310px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+}
+.subtitle,
+p.address {
+	margin: 0;
+}
+.map-marker {
+	display: flex;
+}
+
+/*form.write-inner {
+	display: flex;
+	flex-wrap: wrap;
+	width: 960px;*/
+
+.social-media {
+	display: flex;
+}
+.social-media-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 400px;
+    align-items: center;
+  }
+.socialmedia-promo {
+	display: flex;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
 
 /*-----------------------------------GENERAL-----------------------------*/
 body {
@@ -299,8 +354,8 @@ fieldset {
 /*-----------------------------FOOTER---------------------------------*/
 
 .main-footer {
-	background-image: url(../img/map.jpg);
-	background-repeat: no-repeat;
+	
+	
 	/*background-position:*/ 
 }/*
 .contacts-address */.subtitle {
