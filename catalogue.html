@@ -43,7 +43,9 @@
 			</div>
 		</div>
 
-		<div class="container">
+	<div class="container">
+		
+		<div class="page-column-1">
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр шаблонов</h2>
 			<form class="filter" action="#" method="post" name="template-filter">
@@ -117,7 +119,9 @@
 				<input class="input-submit" type="submit" name="filters-submit" value="Показать"> 
 			</form>	
 		</section>
+		</div>
 
+   <div class="page-column-2">
 		<section class="sorter">
 			<p class="subtitle sorter-headline"><b>Сортировать</b></p>
 			<ul class="sorter-list">
@@ -189,7 +193,7 @@
 					</div>
 				</li>
 			</ul> 
-			</div>
+		</section>
 
 			<ul class="pagination">
 				<li>
@@ -205,12 +209,13 @@
 					<a class="pagination-next" href="#">Следующая</a>
 				</li>
 			</ul>
-		</section>
 		</div>
-	</main>	
+	
+	</div>
+</main>	
 
-	<footer class="main-footer">
-			<div class="contacts-wrapper">
+<footer class="main-footer">
+		<div class="contacts-wrapper">
 			<div class="contacts">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
 				<div class="contacts-address">
@@ -223,40 +228,46 @@
 					<img src="img/map-marker.png" width="231" height="190" alt="Nёrds">
 				</div>
 			</div>
-			</div>
+		</div>
 
-				<div class="write-inner">
-					<h2 class="headline">Напишите нам</h2>
-					<form class="write-inner" action="#" method="post">
-						<div class="inner-data">
+		<div class="write-inner">
+			<form class="" action="#" method="post">
+				<h2 class="headline">Напишите нам<span class="modal-close">&times;</span></h2>
+				<div class="inner-data">
+					<div class="col-2">
 						<label for="name-field">Ваше имя</label>
 						<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+					</div>
+					<div class="col-2">
 						<label for="email-field">Ваш e-mail</label>
 						<input type="text" name="e-mail" id="email-field" placeholder="Для отправки ответа">
+					</div>
+					<div class="col-1">
 						<label for="text-space">Текст письма</label>
 						<textarea name="text-field" id="text-space" placeholder="В свободной форме" rows="4"></textarea>
-						<input class="button" type="submit" name="submit-button" value="ОТПРАВИТЬ">			
-					</form>
-				</div> 
-
-				<div class="social-media container">	
-					<ul class="social-media-list">
-						<li>
-							<a class="social-media-logo social-media-logo-vk" href="#">Вконтакте</a>
-						</li>
-						<li>
-							<a class="social-media-logo social-media-logo-fb" href="#">Фейсбук</a>
-						</li>
-						<li>
-							<a class="social-media-logo social-media-logo-inst" href="#">Инстаграм</a>
-						</li>    	
-					</ul>
-					<div class="socialmedia-promo">
-						<p class="socialmedia-headline">Давайте дружить, это выгодно!</p>
-						<p class="socialmedia-text">Скидка 10% для друзей из социальных сетей.</p>
+						<input class="button" type="submit" name="submit-button" value="Отправить">
 					</div>
-				</div>
+				</div>			
+			</form>
+		</div> 
+
+		<div class="social-media container">	
+			<ul class="social-media-list">
+				<li>
+					<a class="social-media-logo social-media-logo-vk" href="#">Вконтакте</a>
+				</li>
+				<li>
+					<a class="social-media-logo social-media-logo-fb" href="#">Фейсбук</a>
+				</li>
+				<li>
+					<a class="social-media-logo social-media-logo-inst" href="#">Инстаграм</a>
+				</li>    	
+			</ul>
+			<div class="socialmedia-promo">
+				<p class="socialmedia-headline">Давайте дружить, это выгодно!</p>
+				<p class="socialmedia-text">Скидка 10% для друзей из социальных сетей.</p>
 			</div>
-		</footer>
-	</body>
-	</html>
+		</div>
+</footer>
+</body>
+</html>
