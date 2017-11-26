@@ -95,7 +95,7 @@ img {
 
     background-image: url(../img/cart-icon.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 3px;
 
     margin: 0 20px;
     opacity: 0.5;
@@ -114,12 +114,11 @@ img {
     display: inline-block;
     background-repeat: no-repeat;
     background-position: 88% 50%;
-    font-size: 14px;
+    font-size: 17px;
     white-space: normal;
-    padding: 0 10px;
-}
-    
+    padding: 0 10px;  
   }
+
   .slider {
     white-space: nowrap;
     font-size: 0;
@@ -144,9 +143,10 @@ img {
   }
   .slider-button {
     font-size: 14px;
+    min-width: 240px;
   }
   .slide-text {
-    padding-top: 66px;
+    padding-top: 13px;
     max-width: 480px;
 }
   .promo-text {
@@ -459,10 +459,12 @@ img {
     line-height: 55px;
     font-weight: normal; 
   }
-  .promo-text {
+  .slide-promo {
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
+    padding-top: 29px;
+    padding-bottom: 53px;
   }
   /*----------------------------------BUTTONS--------------------------------*/
 
@@ -478,7 +480,9 @@ img {
 
     background-color: #fb565a;
     border: none;
-    border-radius: 2px; 
+    border-radius: 4px; 
+
+    padding: 15px 50px;
   }
   .button:hover,
   .button:focus {
