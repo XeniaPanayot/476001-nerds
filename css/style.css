@@ -57,6 +57,7 @@ div {
 	padding: 0;
 	width: 120px;
 }
+
 /*----------------------------Layout MAIN INDEX--------------------------*/
 .slider-wrapper {
 	background-color: #eeeeee;
@@ -239,8 +240,10 @@ p.address {
 		padding-bottom: 115px;
 	}
 	.page-headline {
-		margin: 0;
-	}
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 	.page-column-1 {
@@ -283,7 +286,7 @@ p.address {
 	}
 	.pagination li {
 		display: inline-block;
-		vertical-align: middle;
+		vertical-align: top;
 	}
 	.pagination-number,
 	.pagination-current,
