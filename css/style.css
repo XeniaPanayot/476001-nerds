@@ -1,6 +1,19 @@
 /*-----------------------------------Layout HEADER-----------------------------*/
-.visually-hidden {
-	display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 p {
 	margin: 0;
@@ -8,6 +21,10 @@ p {
 }
 div {
 	box-sizing: border-box;
+}
+img {
+	width: 100%;
+	height: auto; 
 }
 /*-------------------------------ЦЕНТРОВЩИК И ОТСТУПЫ КРУПНЫХ ЭЛЕМЕНТОВ-----------------------------*/
 
@@ -19,6 +36,7 @@ div {
 	display: flex;
 }
 .header-container { 
+	padding-top: 45px;
 	padding-bottom: 30px;
 }
 .section-container {
@@ -33,31 +51,54 @@ div {
 }
 .navigation {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: baseline;
 	justify-content: center;
 	width: 870px;
 }
 
-.navigation-item a {
+.navigation-list a {
 	display: block;
+	padding: 30px 20px 20px 20px;
 }
 
 .navigation-list  {  
 	margin: 0;
 	padding: 0;
 
-	width: 420px;	
+	max-width: 420px;	
 
 	display: flex;
 	align-items: baseline;
 	justify-content: space-around;
 }
 .cart {
-	margin: 0;
-	padding: 0;
-	width: 120px;
+display: flex;
+flex-wrap: wrap;
+	max-width: 120px;
 }
+.cart-link {
+	display: block;
+	padding-top: 30px;
+	padding-left: 50px;
 
+	position: relative;
+}
+.cart-link::before {
+
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+  top: 38px;
+	left: 15px;
+
+	background-image: url(../img/cart-icon.gif);
+	 background-repeat: no-repeat;
+	 background-position: 0 0;
+
+	 opacity: 0.5;
+}
 /*----------------------------Layout MAIN INDEX--------------------------*/
 .slider-wrapper {
 	background-color: #eeeeee;
