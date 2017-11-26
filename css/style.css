@@ -204,7 +204,6 @@ img {
   .intro-subtitle {
     display: block;
     padding-bottom: 25px;
-
   }
   .intro-item {
     padding-bottom: 23px;
@@ -214,7 +213,6 @@ img {
     line-height: 45px;
     font-weight: medium;
     padding-bottom: 37px;
-
   }
   .promo-text {
     font-size: 16px;
@@ -229,14 +227,14 @@ img {
     min-height: 114px;
     justify-content: space-between;
   }
-
   .efficiency {
-    min-width: 380px;
+    min-width: 410px;
     display: flex;
     flex-direction: column;
     min-height: 380px;
+    padding-top: 38px;
   }
-  .efficiency-logo img {
+  .efficiency-logo {
     width: 96%;
   }
   .efficiency-subtitle {
