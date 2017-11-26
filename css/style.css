@@ -113,10 +113,11 @@ img {
     min-height: 420px;
     display: inline-block;
     background-repeat: no-repeat;
-    background-position: 88% 50%;
+    background-position: 88% 97%;
     font-size: 17px;
     white-space: normal;
     padding: 0 10px;  
+    vertical-align: top;
   }
 
   .slider {
@@ -146,31 +147,36 @@ img {
     min-width: 240px;
   }
   .slide-text {
-    padding-top: 13px;
+    padding-top: 66px;
     max-width: 480px;
-}
+  }
   .promo-text {
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
     padding-bottom: 
   }
-
+  /*----------------------СЕРВИСЫ-----------------------*/
   .our-services {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
   }
-
+  .services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   .services-item {
     width: 300px;
+    margin-right: 100px;
   }
+  .services-item:last-of-type {
+    margin-right: 0;
+  }
+  /*-------------------------------О НАС----------------------------*/
   .about-us {
     display: flex;
-    align-items: center;
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-bottom: 19px;
   }
   .about-us p {
     margin: 0;
@@ -178,8 +184,43 @@ img {
   .introduction {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 384px;
+    padding-top: 73px;
+  }
+  .services-headline {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .promo-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold; 
+    text-transform: uppercase;
+  }
+  .intro-subtitle {
+    display: block;
+    padding-bottom: 25px;
+
+  }
+  .intro-item {
+    padding-bottom: 23px;
+  }
+  .promo-headline {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: medium;
+    padding-bottom: 37px;
+
+  }
+  .promo-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    padding-bottom: 33px;
   }
   .services-list {
     margin: 0;
@@ -194,8 +235,22 @@ img {
     display: flex;
     flex-direction: column;
     min-height: 380px;
-    justify-content: space-between;
-    align-items: center;
+  }
+  .efficiency-logo img {
+    width: 96%;
+  }
+  .efficiency-subtitle {
+    padding-bottom: 59px;
+  }
+  .efficiency-percent {
+    font-size: 45px;
+    line-height: 10.06px;
+    font-weight: bold; 
+  }
+  .efficiency-legend {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
   }
   .partners {
     margin: 0;
@@ -472,7 +527,6 @@ img {
   .contacts-address .button,
   .item-inner-btn {
     font: inherit;
-
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
@@ -484,6 +538,11 @@ img {
 
     padding: 15px 50px;
   }
+
+  .button {
+    display: inline-block;
+  }
+
   .button:hover,
   .button:focus {
     background-color: #e74246;
@@ -492,7 +551,9 @@ img {
     background-color: #fb565a;
     color: #d7373b;
   }
-
+  .services-button {
+    padding: 15px 40px;
+  }
   .button-green {
     background-color: #00ca74;
   }
@@ -515,40 +576,7 @@ img {
     background-color: #e5a722;
     color: #d7373b;
   }
-  /*-------------------------------INDEX SERVICES----------------------------*/
-  .services-headline {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .promo-subtitle {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold; 
-    text-transform: uppercase;
-  }
-  .efficiency-percent {
-    font-size: 45px;
-    line-height: 10.06px;
-    font-weight: bold; 
-  }
-  .efficiency-legend {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: normal;
-  }
-  .promo-headline {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: medium;
-
-  }
-  .promo-text {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-  }
+  
   /*--------------------------------------PARTNER'S LOGO------------------------- */
   .partners-logo {
     opacity: 0.2;
