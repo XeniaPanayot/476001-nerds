@@ -177,14 +177,11 @@ img {
   .about-us {
     display: flex;
     padding-bottom: 19px;
+    border-top: 2px solid #eeeeee;
   }
-  .about-us p {
-    margin: 0;
-  }
+
   .introduction {
-    display: flex;
-    flex-direction: column;
-    min-height: 384px;
+    width: 760px;
     padding-top: 73px;
   }
   .services-headline {
@@ -201,13 +198,7 @@ img {
     font-weight: bold; 
     text-transform: uppercase;
   }
-  .intro-subtitle {
-    display: block;
-    padding-bottom: 25px;
-  }
-  .intro-item {
-    padding-bottom: 23px;
-  }
+  
   .promo-headline {
     font-size: 45px;
     line-height: 45px;
@@ -220,43 +211,81 @@ img {
     font-weight: normal;
     padding-bottom: 33px;
   }
+  .intro-text {
+   padding-bottom: 32px; 
+  }
+  .intro-subtitle {
+    display: block;
+    padding-bottom: 25px;
+  }
+  .intro-item {
+    padding-bottom: 23px;
+  }
   .services-list {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 114px;
     justify-content: space-between;
   }
   .efficiency {
-    min-width: 410px;
-    display: flex;
-    flex-direction: column;
-    min-height: 380px;
+    width: 420px;
     padding-top: 38px;
+    text-align: center;
   }
   .efficiency-logo {
-    width: 96%;
+    width: 360px;
   }
   .efficiency-subtitle {
-    padding-bottom: 59px;
+    margin-top: 29px;
+    padding-bottom: 40px;
   }
   .efficiency-percent {
-    font-size: 45px;
-    line-height: 10.06px;
-    font-weight: bold; 
+    font-size: 44px;
+    line-height: 1em;
+    font-weight: 700;
+    padding-left: 6px;
+  }
+  .efficiency-percent sup {
+    font-size: 0.66em;
+  }
+  .efficiency-data {
+    margin-left: 25px;
+    text-align: left;
+    padding-left: 10px;
   }
   .efficiency-legend {
     font-size: 16px;
     line-height: 18px;
-    font-weight: normal;
+    padding-top: 19px;
   }
   .partners {
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
-    min-height: 280px;
-    justify-content: space-between;
+    min-height: 180px;
+    justify-content: space-around;
+    padding-top: 91px;
+  }
+  .partners li {
+    text-align: center;
+    width: 22%;
+    position: relative;
+    padding-right: 15px;
+  }
+  .partners li::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -8px;
+    background: #eeeeee;
+  }
+  .partners img {
+    width: auto;
   }
 
   /*------------------------------Layout FOOTER----------------------------*/
@@ -264,6 +293,7 @@ img {
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 
   }
   .contacts {
     display: flex;
@@ -281,6 +311,7 @@ img {
     justify-content: space-around;
     align-items: center;
     background-color: #ffffff;
+
   }
   .subtitle,
   p.address {
@@ -313,6 +344,7 @@ img {
   }
   .main-footer {
     position: relative;
+    padding 
   }
   /*-----------------------------WRITE-INNER-----------------------*/
   .write-inner {
@@ -324,6 +356,7 @@ img {
     background-color: #ffffff;
     padding: 100px 70px;
     box-sizing: border-box;
+    display: none;
   }
   .write-inner .headline {
     font: inherit;
