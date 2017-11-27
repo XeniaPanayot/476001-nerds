@@ -393,6 +393,7 @@ img {
   width: 220px;
   max-height: 51px;
   padding: 13px 29px;
+  color: #ffffff;
   margin: 0 auto;
 }
 .map-marker {
@@ -406,15 +407,55 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 400px;
+  width: 259px;
   align-items: center;
+  justify-content: space-between;
 }
+
 .socialmedia-promo {
-  display: flex;
-  flex-direction: column;
-  padding-top: 72px;
+  padding-top: 62px;
   padding-bottom: 72px;
+  padding-left: 142px;
 }
+.socialmedia-headline {
+  padding-bottom: 11px;
+}
+
+/*------------------------------СОЦ СЕТИ--------------------------*/
+.social-media-logo-vk::before {
+  content: "";
+  display: block;
+  background: url(../img/vk-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #eeeeee;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.social-media-logo-fb::before {
+  content: "";
+  display: block;
+  background: url(../img/fb-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #eeeeee;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.social-media-logo-inst::before {
+  content: "";
+  display: block;
+  background: url(../img/insta-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #eeeeee;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
 
 /*-----------------------------WRITE-INNER-----------------------*/
 .write-inner {
