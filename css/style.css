@@ -103,6 +103,10 @@ img {
   color: #d7373b;
 }
 
+.main-header a,
+.contacts-address {
+  color: #000000;
+}
 /*-------------------------------Layout HEADER---------------------*/
 .logo {
   min-width: 160px; 
@@ -353,6 +357,9 @@ img {
 .footer-index {
   padding-top: 79px;
 }
+.footer-catalogue {
+  padding-top: 65px;
+}
 
 .contacts-wrapper {
   background-image: url(../img/map.jpg);
@@ -368,15 +375,15 @@ img {
   padding: 0;
 }
 .contacts-address {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  min-height: 310px;
-  text-align: center;
-  background-color: #ffffff;
-  position: absolute;
-  top: 14%;
-  left: 21%;
+display: flex;
+flex-direction: column;
+width: 320px;
+min-height: 310px;
+text-align: center;
+background-color: #ffffff;
+position: absolute;
+top: 12%;
+left: 11%;
 }
 .subtitle-contacts {
   margin: 0;
@@ -520,68 +527,73 @@ img {
 /*-------------------------Layout CATALOGUE MAIN-------------------------*/
 .headline {
   background: #eeeeee;
-  padding-top: 74px;
-  padding-bottom: 115px;
+  padding-top: 68px;
+  padding-bottom: 112px;
 }
 .page-headline {
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 382px;
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 
 
 .page-column-1 {
-  width: 30%;
+  width: 360px;
 }
 .page-column-2 {
-  display: flex;
-  width: 70%;
-
-  flex-wrap: wrap;
-  flex-direction: column;
+display: flex;
+width: 826px;
+flex-wrap: wrap;
+flex-direction: column;
+padding-left: 44px;
 }
 .sorter {
-  display: flex;
+display: flex;
+padding-top: 55px;
 }
 
 .sorter-headline {
-  width: 50%;
+width: 399px;
 }
 .sorter-list {
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
-  justify-content: space-between;
+margin: 0;
+padding: 0;
+width: 404px;
+display: flex;
+justify-content: space-around;
 }
 .catalogue {
-
+  padding-bottom: 25px;
 }
 .catalogue-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-top: 53px;
+width: 760px;
+align-items: center;
+}
+.catalogue-item {
+width: 360px;
+padding-bottom: 27px;
 }
 .pagination {
-  margin: 0;
-  padding: 0;
-  margin-left: 25px;
+margin: 0;
+padding: 0;
 }
 .pagination li {
-  display: inline-block;
-  vertical-align: top;
+display: inline-block;
+vertical-align: top;
+padding-right: 10px;
 }
-.pagination-number,
-.pagination-current,
-.pagination-next {
-  padding: 20px;
-}
+
 /*-----------------------------------GENERAL-----------------------------*/
 body {
   margin: 0;
   padding: 0;
-
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -634,10 +646,7 @@ fieldset {
 .navigation-list {
   list-style: none;
 }
-.main-header a,
-.contacts-address a {
-  color: #000000;
-}
+
 .main-header a:hover,
 .main-header a:focus {
   color: #fb565a;
@@ -885,17 +894,25 @@ textarea:focus:-ms-input-placeholder {
     /*----------------------------------PAGINATION-----------------------------*/
 
     .pagination-number,
-    .pagination-next  {
+    .pagination-next {
       background-color: #eeeeee;
       text-transform: uppercase;
       font: inherit;
-      font-size: 16px;
+      font-size: 16px;  
       line-height: 18px;
-
-      min-height: 50px;
-      min-width: 50px;
-
       display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      padding: 20px;
+  }
+    .pagination-number {  
+    height: 50px;
+    width: 50px;
+    }
+    .pagination-next {
+      width: 251px;
+      height: 50px;
+      text-align: center;
     }
 
     .pagination-number:hover,
