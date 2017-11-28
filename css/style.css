@@ -187,6 +187,7 @@ img {
   font-size: 55px;
   line-height: 55px;
   font-weight: normal;
+  padding-bottom: 29px;
 }
 .slider-button {
   font-size: 14px;
@@ -196,7 +197,6 @@ img {
 .slide-text {
   padding-top: 66px;
   max-width: 480px;
-  /*padding: 15px 50px;*/
 }
 .promo-text {
   font-size: 16px;
@@ -391,10 +391,13 @@ img {
   position: absolute;
   top: 12%;
   left: 11%;
+  padding-top: 52px;
+  padding-bottom: 47px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 .subtitle-contacts {
   margin: 0;
-  padding-top: 47px;
   padding-bottom: 23px;
 }
 .address {
@@ -675,8 +678,7 @@ fieldset {
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
-    padding-top: 29px;
-    padding-bottom: 53px;
+    padding-bottom: 44px;
   }
 
   /*--------------------------------------PARTNER'S LOGO------------------------- */
