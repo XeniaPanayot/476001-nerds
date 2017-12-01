@@ -955,7 +955,6 @@ textarea:focus:-ms-input-placeholder {
     font-weight: normal;
     text-transform: uppercase;
   }
-
   .input-radiobutton + label::before {
     position: absolute;
     display: block;
@@ -966,11 +965,9 @@ textarea:focus:-ms-input-placeholder {
     border: solid 2px;
     border-radius: 50%;   
   }
-
   .input-checkbox + label::before {
     position: absolute;
     display: block;
-
     content: "";
     height: 27px;
     width: 27px;
@@ -988,4 +985,3 @@ textarea:focus:-ms-input-placeholder {
     color: #ededed;
     opacity: 0.5;
     }*/
-
