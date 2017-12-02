@@ -582,10 +582,7 @@ border-radius: 50%;
   width: 760px;
   align-items: center;
 }
-.catalogue-item {
-  width: 360px;
-  padding-bottom: 27px;
-}
+
 .pagination {
   margin: 0;
   padding: 0;
@@ -768,6 +765,108 @@ textarea:focus:-ms-input-placeholder {
   }*/
 
   /*--------------------------ФИЛЬТРЫ БОКОВАЯ ПАНЕЛЬ---------------------------*/
+.filters {
+  padding-top: 55px;
+}
+.price-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.price-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  
+  height: 80px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 55%;
+  height: 3px;
+  margin-left: 9%;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 163px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 80px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
 
   /*-------------------------RADIOBUTTON & CHECKBOX---------------------------*/
   legend .subtitle {
@@ -861,6 +960,7 @@ textarea:focus:-ms-input-placeholder {
   .catalogue-item {
     width: 360px;
     position: relative;
+    margin-bottom: 27px;
   }
   .catalogue-link {
   }
@@ -888,12 +988,15 @@ textarea:focus:-ms-input-placeholder {
     background-color: #eeeeee;
     text-align: center;
     position: absolute;
-    top: 114%;
-
+    bottom: 0;
     display: none;
   }
   .inner-container {
     margin: 30px 80px;
+  }
+
+  .catalogue-link img {
+    display: block;
   }
   .description {
    /* font-size: 16px;

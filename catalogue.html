@@ -44,23 +44,27 @@
 					<div class="page-column-1">
 						<section class="filters">
 							<h2 class="visually-hidden">Фильтр шаблонов</h2>
-							<form class="filter" action="#" method="post" name="template-filter">
-								<fieldset class="price">
+							<form class="filter" action="https://echo.htmlacademy.ru" method="get" name="template-filter">
+								<fieldset class="price-item">
 									<legend class="subtitle filter-headline">Стоимость</legend>	
-									<ul class="price-range">
-										<li>
-											<div class="range-controls">
+<!-- 									<ul class="price-filters">
+										<li> -->
+											<div class="range-filter">
+											 <div class="range-controls">
 												<div class="scale">
-													<div class="toggle-min"></div>
-													<div class="toggle-max"></div>
+													<div class="bar"></div>
 												</div>
+													<div class="toggle toggle-min"></div>
+													<div class="toggle toggle-max"></div>
+											</div>
 												<div class="price-controls">
-													от<input class="visually-hidden controls-min-price" type="text" name="min-price" value="0">
-													до<input class="visually-hidden controls-max-price" type="text" name="max-price" value="15000">
+													<label class="min-price">от <input class="min-price" type="text" name="min-price" value="0"></label>
+													<label class="max-price">до <input class="max-price" type="text" name="max-price" value="15000"></label>
 												</div>
 											</div>
-										</li>
-										<li>
+										<!-- </li> -->
+										
+										<!-- <li>
 											<label for="price-0" class="price" >От</label>
 											<input class="visually-hidden input-min-price" type="text" name="price-0" id="price-0">
 										</li>
@@ -68,7 +72,7 @@
 											<label for="price-15000" class="price">До</label>
 											<input class="visually-hidden input-max-price" type="text" name="price-15000" id="price-15000">
 										</li>
-									</ul>
+									</ul> -->
 								</fieldset>
 								<fieldset class="grid">
 									<legend class="subtitle filter-headline">Сетка</legend> 
