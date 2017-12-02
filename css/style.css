@@ -860,9 +860,9 @@ textarea:focus:-ms-input-placeholder {
   /*----------------------------------CATALOGUE------------------------------*/
   .catalogue-item {
     width: 360px;
+    position: relative;
   }
   .catalogue-link {
-    position: relative;
   }
   .catalogue-link::before {
     content: "";
@@ -871,15 +871,15 @@ textarea:focus:-ms-input-placeholder {
     display: block;
     background-image: url(../img/browser.png);
     background-repeat: no-repeat;
-
   }
-  .catalogue-link:hover::before,
-  .catalogue-link:focus::before {
+
+  .catalogue-item:hover .catalogue-link::before,
+  .catalogue-item:focus .catalogue-link::before {
     opacity: 0.5;
   } 
 
-  .catalogue-link:hover + .catalogue-inner {
-    display: inline-block;
+  .catalogue-item:hover .catalogue-inner {
+    display: block;
   } 
 
   .catalogue-inner {
