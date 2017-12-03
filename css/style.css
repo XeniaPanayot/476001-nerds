@@ -772,6 +772,7 @@ textarea:focus:-ms-input-placeholder {
   margin: 0;
   padding: 0;
   border: none;
+  padding-bottom: 55px;
 }
 .range-filter {
   width: 260px;
@@ -869,6 +870,13 @@ textarea:focus:-ms-input-placeholder {
 }
 
   /*-------------------------RADIOBUTTON & CHECKBOX---------------------------*/
+.grid-headline {
+  padding-bottom: 9px;
+}
+.grid-list li {
+  padding-bottom: 17px;
+
+}
   legend .subtitle {
     font-size: 18px;
     line-height: 30px;
@@ -884,8 +892,9 @@ textarea:focus:-ms-input-placeholder {
     font-size: 16px;
     line-height: 20px;
     font-weight: normal;
-    padding-left: 40px;
+    padding-left: 25px;
     background-repeat: no-repeat;
+    position: relative;
   }
   input[type="checkbox"] + label::before,
   input[type="radio"] + label::before {
@@ -893,6 +902,11 @@ textarea:focus:-ms-input-placeholder {
     display: inline-block;
     height: 25px; 
     width:25px;
+    position: absolute;
+    left: -10px;
+  }
+ input[type="radio"] + label.flexible-radio::before {
+    display: none;
   }
 
   input[type="checkbox"] + label::before {
