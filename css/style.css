@@ -62,9 +62,13 @@ img {
   vertical-align: middle;
   background-color: #fb565a;
   border: none;
-  border-radius: 2px; 
+  border-radius: 4px; 
 }
-
+.item-inner-btn {
+  padding: 15px 40px;
+  width: 100%;
+  display: inline-block;
+}
 .button {
   display: inline-block;
 }
@@ -418,9 +422,9 @@ img {
 }
 
 .social-media {
-display: flex;
-padding-top: 62px;
-padding-bottom: 72px;
+  display: flex;
+  padding-top: 62px;
+  padding-bottom: 72px;
 }
 .social-media-list {
   margin: 0;
@@ -442,15 +446,15 @@ padding-bottom: 72px;
 /*------------------------------СОЦ СЕТИ--------------------------*/
 
 .social-media-logo-vk {
-display: block;
-background: url(../img/vk-icon.png);
-background-repeat: no-repeat;
-background-position: center;
-background-color: #eeeeee;
-width: 80px;
-height: 80px;
-border-radius: 50%;
-  }
+  display: block;
+  background: url(../img/vk-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #eeeeee;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
 .social-media-logo-fb {
   display: block;
   background: url(../img/fb-icon.png);
@@ -765,118 +769,130 @@ textarea:focus:-ms-input-placeholder {
   }*/
 
   /*--------------------------ФИЛЬТРЫ БОКОВАЯ ПАНЕЛЬ---------------------------*/
-.filters {
-  padding-top: 55px;
-}
-.price-item {
-  margin: 0;
-  padding: 0;
-  border: none;
-  padding-bottom: 55px;
-}
-.range-filter {
-  width: 260px;
-  margin-top: 49px;
-}
+  fieldset {
+    margin: 0;
+    padding: 0;
+  }
 
-.price-item legend {
-  font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+  .filters {
+    padding-top: 55px;
+  }
+  .price-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding-bottom: 55px;
+  }
+  .range-filter {
+    width: 260px;
+    margin-top: 49px;
+  }
 
-.range-controls {
-  position: relative;
-  
-  height: 80px;
-  margin-bottom: 15px;
-  padding-top: 39px;
-  padding-right: 20px;
-  padding-left: 20px;
-  
-  background-color: #f1f1f1;
-  
-  border-radius: 5px;
-}
+  .price-item legend {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 
-.range-controls .scale {
-  height: 2px;
+  .range-controls {
+    position: relative;
+    
+    height: 80px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    background-color: #f1f1f1;
+    
+    border-radius: 5px;
+  }
 
-  background: #d7dcde;
-}
+  .range-controls .scale {
+    height: 2px;
 
-.range-controls .bar {
-  width: 55%;
-  height: 3px;
-  margin-left: 9%;
-  background: #00ca74;
-}
+    background: #d7dcde;
+  }
 
-.range-controls .toggle {
-  position: absolute;
-  top: 32px;
-  left: 0;
-  
-  width: 20px;
-  height: 20px;
-  padding: 0;
+  .range-controls .bar {
+    width: 55%;
+    height: 3px;
+    margin-left: 9%;
+    background: #00ca74;
+  }
 
-  border: 8px solid #ffffff;
-  background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  border-radius: 50%;
-  cursor: pointer;
-}
+  .range-controls .toggle {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    
+    width: 20px;
+    height: 20px;
+    padding: 0;
 
-.range-controls .toggle-min {
-  left: 18px;
-}
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 
-.range-controls .toggle-max {
-  left: 163px;
-}
+  .range-controls .toggle-min {
+    left: 18px;
+  }
 
-.price-controls {
-  font-size: 0;
-}
+  .range-controls .toggle-max {
+    left: 163px;
+  }
 
-.price-controls label {
-  display: inline-block;
-  width: 50%;
-  
-  font-size: 16px;
-  text-transform: uppercase;
-}
+  .price-controls {
+    font-size: 0;
+  }
 
-.price-controls input {
-  width: 80px;
-  padding-top: 9px;
-  padding-bottom: 10px;
-  margin-left: 10px;
-  
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: #283136;
-  
-  border: none;
-  border-radius: 5px;
-  background: #f1f1f1;
-}
+  .price-controls label {
+    display: inline-block;
+    width: 50%;
+    
+    font-size: 16px;
+    text-transform: uppercase;
+  }
 
-.max-price {
-  text-align: right;
-}
+  .price-controls input {
+    width: 80px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+    
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+  }
+
+  .max-price {
+    text-align: right;
+  }
 
   /*-------------------------RADIOBUTTON & CHECKBOX---------------------------*/
-.grid-headline {
-  padding-bottom: 9px;
-}
-.grid-list li {
-  padding-bottom: 17px;
-
-}
+  .grid,
+  .features {
+    padding-bottom: 25px;
+  }
+  .grid-headline,
+  .features-headline {
+    padding-bottom: 15px;
+  }
+  .grid-list li {
+    padding-bottom: 17px;
+  }
+  .features-list li {
+    padding-bottom: 17px;
+  }
   legend .subtitle {
     font-size: 18px;
     line-height: 30px;
@@ -892,7 +908,7 @@ textarea:focus:-ms-input-placeholder {
     font-size: 16px;
     line-height: 20px;
     font-weight: normal;
-    padding-left: 25px;
+    padding-left: 37px;
     background-repeat: no-repeat;
     position: relative;
   }
@@ -903,9 +919,9 @@ textarea:focus:-ms-input-placeholder {
     height: 25px; 
     width:25px;
     position: absolute;
-    left: -10px;
+    left: 0px;
   }
- input[type="radio"] + label.flexible-radio::before {
+  input[type="radio"] + label.flexible-radio::before {
     display: none;
   }
 
@@ -930,16 +946,17 @@ textarea:focus:-ms-input-placeholder {
   }
 
   input[type="submit"] {
+    width: 74%;
+    padding: 15px 40px;
     font: inherit;
-
     color: #000000;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
-
     background-color: #eeeeee;
     border: none;
     border-radius: 2px;
+
   }
   input[type="submit"]:hover,
   input[type="submit"]:focus {
@@ -1006,56 +1023,58 @@ textarea:focus:-ms-input-placeholder {
     display: none;
   }
   .inner-container {
-    margin: 30px 80px;
+    margin: 27px 80px;
   }
-
+  h3.subtitle {
+    margin: 0;
+    padding-bottom: 11px;
+  }
+  .description {
+    padding-bottom: 20px;
+  }
   .catalogue-link img {
     display: block;
   }
-  .description {
-   /* font-size: 16px;
+  
+
+
+
+  /*----------------------------------PAGINATION-----------------------------*/
+
+  .pagination-number,
+  .pagination-next {
+    background-color: #eeeeee;
+    text-transform: uppercase;
+    font: inherit;
+    font-size: 16px;  
     line-height: 18px;
-    font-weight: 400;*/
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+  }
+  .pagination-number {  
+    height: 50px;
+    width: 50px;
+  }
+  .pagination-next {
+    width: 251px;
+    height: 50px;
+    text-align: center;
   }
 
-
-
-    /*----------------------------------PAGINATION-----------------------------*/
-
-    .pagination-number,
-    .pagination-next {
-      background-color: #eeeeee;
-      text-transform: uppercase;
-      font: inherit;
-      font-size: 16px;  
-      line-height: 18px;
-      display: inline-block;
-      text-align: center;
-      vertical-align: middle;
-      padding: 20px;
-    }
-    .pagination-number {  
-      height: 50px;
-      width: 50px;
-    }
-    .pagination-next {
-      width: 251px;
-      height: 50px;
-      text-align: center;
-    }
-
-    .pagination-number:hover,
-    .pagination-number:focus,
-    .pagination-next:hover,
-    .pagination-next:focus {
-      background-color: #dfdfdf;
-    }
-    .pagination-number a:active,
-    .pagination-next a:active  {
-      opacity: 0.5;
-      color: #bfbfbf;
-      box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
+  .pagination-number:hover,
+  .pagination-number:focus,
+  .pagination-next:hover,
+  .pagination-next:focus {
+    background-color: #dfdfdf;
+  }
+  .pagination-number a:active,
+  .pagination-next a:active  {
+    opacity: 0.5;
+    color: #bfbfbf;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 
   ./*input-radiobutton,
   .input-checkbox {
