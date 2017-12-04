@@ -70,7 +70,8 @@ ul {
 .sorter-list,
 .navigation-list,
 .catalogue-list,
-.pagination {
+.pagination,
+.partners {
   margin: 0;
   padding: 0;
 }
@@ -227,7 +228,7 @@ img {
 
 .slide {
   width: 100%;
-  min-height: 420px;
+  min-height: 422px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: 88% 97%;
@@ -266,8 +267,8 @@ img {
   padding: 15px 40px;
 }
 .slide-text {
+  max-width: 515px;
   padding-top: 66px;
-  max-width: 480px;
 }
 .promo-text {
   font-size: 16px;
@@ -283,7 +284,7 @@ img {
 }
 .services {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 77px;
 }
 .services-item {
   width: 300px;
@@ -299,39 +300,45 @@ img {
 /*-------------------------------О НАС----------------------------*/
 .about-us {
   display: flex;
+
   padding-bottom: 52px;
   border-top: 2px solid #eeeeee;
 }
 
 .introduction {
-  width: 760px;
-  padding-top: 73px;
+  width: 742px;
+
+  padding-top: 76px;
+  padding-right: 70px;
 }
 .services-headline {
   font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
+  line-height: 1.2em;
+  font-weight: 700;
   text-transform: uppercase;
+
   margin-top: 20px;
   margin-bottom: 15px;
 }
 .promo-subtitle {
   font-size: 16px;
-  line-height: 24px;
-  font-weight: bold; 
+  line-height: 1.5em;
+  font-weight: 700; 
   text-transform: uppercase;
 }
 
 .promo-headline {
   font-size: 45px;
   line-height: 45px;
-  font-weight: medium;
+  font-weight: 500;
+
   padding-bottom: 37px;
 }
 .promo-text {
   font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
+  line-height: 1.5em;
+  font-weight: 400;
+
   padding-bottom: 33px;
 }
 .intro-headline {
@@ -342,21 +349,25 @@ img {
 }
 .intro-subtitle {
   display: block;
-  padding-bottom: 27px;
+
+  padding-bottom: 24px;
 }
 .intro-item {
   padding-bottom: 23px;
 }
 .intro-item::before {
   content: "";
-  display: inline-block;
-  vertical-align: middle;
+  
   width: 27px;
   height: 3px;
+
   background: #fb565a;
   border: solid #ffffff;
   border-width: 0px 10px;
   border-left: 0;
+
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .services-list {
@@ -367,45 +378,51 @@ img {
 }
 .efficiency {
   width: 420px;
-  padding-top: 38px;
+
   text-align: center;
+
+  padding-top: 43px;
+  padding-left: 56px;
 }
 .efficiency-logo {
   width: 360px;
+
+  margin-bottom: 28px;
 }
 .efficiency-subtitle {
-  margin-top: 29px;
   padding-bottom: 40px;
 }
 .efficiency-percent {
   font-size: 44px;
   line-height: 1em;
   font-weight: 700;
-  padding-left: 6px;
+
+  padding-right: 20px;
 }
 .efficiency-percent sup {
   font-size: 0.66em;
 }
 .efficiency-data {
-  margin-left: 25px;
   text-align: left;
-  padding-left: 10px;
 }
 .efficiency-legend {
   font-size: 16px;
   line-height: 18px;
   padding-top: 19px;
 }
+
+/*-----------------------PARTNERS---------------------*/
 .partners {
-  margin: 0;
-  padding: 0;
+  min-height: 180px;
+
   display: flex;
   align-items: center;
-  min-height: 180px;
   justify-content: space-around;
+
   padding-top: 50px;
   padding-bottom: 38px;
 }
+
 .partners li {
   text-align: center;
   width: 22%;
@@ -825,7 +842,7 @@ img {
     line-height: 24px;
     font-weight: 500;
 
-    padding-bottom: 44px;
+    padding-bottom: 39px;
   }
 
   /*--------------------------------------PARTNER'S LOGO------------------------- */
