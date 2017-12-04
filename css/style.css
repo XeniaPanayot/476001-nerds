@@ -948,7 +948,7 @@ textarea:focus:-ms-input-placeholder {
     position: absolute;
     left: 0px;
   }
- input[type="radio"] + label.flexible-radio::before {
+ input[type="radio"] + label.hidden-radio::before {
     display: none;
   }
 
