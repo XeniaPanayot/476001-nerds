@@ -38,10 +38,10 @@ fieldset {
   border: none;
 }
 .subtitle legend {
-  font-family: Roboto bold, Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .subtitle {
@@ -770,6 +770,7 @@ ul {
 }
 .write-inner input[type="text"],
 .write-inner textarea {
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1113,7 +1114,7 @@ textarea:focus:-ms-input-placeholder {
   legend .subtitle {
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
   }
   input[type="checkbox"],
