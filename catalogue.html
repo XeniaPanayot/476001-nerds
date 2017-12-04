@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nerds</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400, 500, 700&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -21,7 +21,7 @@
 						<a class="navigation-item" href="#">Клиенты</a>
 					</li>
 					<li>
-						<a class="navigation-item" href="catalogue.html">Магазин</a>
+						<a class="navigation-item active-item" href="catalogue.html">Магазин</a>
 					</li>
 					<li>
 						<a class="navigation-item" href="#">Контакты</a>
@@ -83,7 +83,7 @@
 										</li>
 										<li>
 											<input class="visually-hidden input-radiobutton" type="radio" name="radiobutton-grid" value="fixed" id="fixed-radio" hidden>
-											<label for="fixed-radio">Фиксированная</label>
+											<label for="fixed-radio" class="flexible-radio">Фиксированная</label>
 										</li>
 										<li>
 											<input class="visually-hidden input-radiobutton" type="radio" name="radiobutton-grid" value="flexible" id="flexible-radio" hidden>
@@ -243,7 +243,7 @@
 
 				<div class="write-inner">
 					<form class="" action="#" method="post">
-						<h2 class="headline">Напишите нам<span class="modal-close">&times;</span></h2>
+						<h2 class="headline">Напишите нам<div class="modal-close">&times;</div></h2>
 						<div class="inner-data">
 							<div class="col-2">
 								<label for="name-field">Ваше имя</label>
@@ -256,7 +256,7 @@
 							<div class="col-1">
 								<label for="text-space">Текст письма</label>
 								<textarea name="text-field" id="text-space" placeholder="В свободной форме" rows="4"></textarea>
-								<input class="button" type="submit" name="submit-button" value="Отправить">
+								<input class="button inner-button" type="submit" name="submit-button" value="Отправить">
 							</div>
 						</div>			
 					</form>
