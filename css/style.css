@@ -719,7 +719,9 @@ ul {
 
   display: none;
 }
-
+.write-inner-show {
+  display: block;
+}
 .write-inner .headline {
   font-size: 45px;
   line-height: 1em;

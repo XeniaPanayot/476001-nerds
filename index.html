@@ -216,5 +216,16 @@
 				</div>
 			</div>
 		</footer>
+	 <script type="text/javascript">
+		var write = document.querySelector(".write-us-button");
+		var popup = document.querySelector(".write-inner");
+
+		write.addEventListener("click", function (evt) {
+			evt.preventDefault();
+			console.log("click on Write-us button");
+			popup.classList.add("write-inner-show");
+		});
+
+	 </script>
 	</body>
 	</html>
