@@ -593,7 +593,7 @@ ul {
   background-color: #ffffff;
 
   position: absolute;
-  top: 12%;
+  top: 11%;
   left: 13%;
 
   display: flex;
@@ -626,6 +626,9 @@ ul {
 
 .map-marker {
   display: none;
+  /*position: absolute;
+  top: 5%;
+  right: 45%;*/
 }
 
 .social-media {
@@ -862,15 +865,16 @@ ul {
   width: 826px;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-left: 44px;
+  padding-left: 49px;
 }
 
 /*-----------------------SORTER---------------------*/
 .sorter {
   display: flex;
+  align-items: center;
 
-  padding-top: 55px;
-  padding-bottom: 51px;
+  padding-top: 51px;
+  padding-bottom: 53px;
 }
 
 .sorter-headline {
@@ -918,7 +922,7 @@ ul {
 
 /*------------------------CATALOGUE-------------------*/
 .catalogue {
-  padding-bottom: 48px;
+  padding-bottom: 44px;
 }
 
 .catalogue-list {
@@ -1156,9 +1160,6 @@ ul {
     position: relative;
   }
 
-
-
-
   input[type="checkbox"] + label::before,
   input[type="radio"] + label::before {
     content: "";
@@ -1168,9 +1169,6 @@ ul {
     width:27px;
     position: absolute;
     left: 0px;
-  }
-  input[type="radio"] + label.hidden-radio::before {
-    display: none;
   }
 
   input[type="checkbox"] + label::before {
