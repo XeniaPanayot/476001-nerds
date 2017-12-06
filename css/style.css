@@ -207,8 +207,15 @@ ul {
   .logo {
     min-width: 160px; 
     min-height: 70px;
-
   }
+  .logo:hover,
+  .logo:focus {
+    opacity: 0.8;
+  }
+  .logo:active {
+    opacity: 0.3;
+  }
+
   .navigation-list  {  
     display: flex;
     flex-grow: 1;
