@@ -768,12 +768,20 @@ ul {
   font-weight: 400;
   opacity: 0.5;
   color: #fb565a;
+  cursor: pointer;
 
   position: absolute;
   top: 47px;
   right: 67px;
 
   padding: 20px;
+}
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+.modal-close:active {
+  opacity: 0.1;
 }
 
 .inner-data {
