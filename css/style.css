@@ -10,6 +10,8 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+
+  min-width: 1200px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -545,6 +547,9 @@ ul {
   right: -8px;
   background: #eeeeee;
 }
+.partners li:last-of-type::after {
+  display: none;
+}
 .partners img {
   width: auto;
 }
@@ -566,7 +571,6 @@ ul {
 
 .contacts-wrapper {
   min-height: 420px;
-
   position: relative;
 
   background-size: cover;
@@ -574,7 +578,9 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.address-wrapper {
+  min-height: 400px;
+}
 .iframe-map {
   border: 0;
   width: 100%;
@@ -594,7 +600,7 @@ ul {
 
   position: absolute;
   top: 11%;
-  left: 13%;
+  left: 7%;
 
   display: flex;
   flex-direction: column;
