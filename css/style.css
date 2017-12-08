@@ -876,6 +876,7 @@ ul {
 
 .page-column-1 {
   width: 360px;
+  padding-left: 2px;
 }
 .page-column-2 {
   display: flex;
@@ -891,7 +892,7 @@ ul {
   align-items: center;
 
   padding-top: 54px;
-  padding-bottom: 53px;
+  padding-bottom: 55px;
 }
 
 .sorter-headline {
@@ -934,12 +935,59 @@ ul {
 }
 
 .btn-down {
-  padding-left: 50px;
+  padding-left: 10px;
+  position: relative;
 }
 
+.btn-down::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 11px solid #ededed;
+  
+  position: absolute;
+  top: 4px;
+  left: 53px;
+}
+
+.btn-up {
+  position: relative;
+}
+
+.btn-up::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 11px solid #ededed;
+  
+  position: absolute;
+  top: 8px;
+  left: 67px;
+}
+.btn-up:hover::before,
+.btn-up:focus::before {
+  border-bottom: 11px solid #a6a6a6;
+}
+
+.btn-down:hover::before,
+.btn-down:focus::before {
+  border-top: 11px solid #a6a6a6;
+}
+
+.btn-up:active::before {
+  border-bottom: 11px solid #231f20;
+}
+
+.btn-down:active::before {
+  border-top: 11px solid #231f20;
+}
 /*------------------------CATALOGUE-------------------*/
 .catalogue {
-  padding-bottom: 44px;
+  padding-bottom: 21px;
 }
 
 .catalogue-list {
@@ -1047,7 +1095,7 @@ fieldset {
 }
 
 .filters {
-  padding-top: 55px;
+  padding-top: 58px;
 }
 .price-item {
   margin: 0;
@@ -1275,10 +1323,9 @@ input[type="radio"]:checked + label::before {
   .catalogue-item {
     width: 360px;
     position: relative;
-    margin-bottom: 27px;
+    margin-bottom: 35px;
   }
-  .catalogue-link {
-  }
+  
   .catalogue-link::before {
     content: "";
     height: 40px;
@@ -1307,8 +1354,9 @@ input[type="radio"]:checked + label::before {
     display: none;
   }
   .inner-container {
-    margin: 27px 80px;
+    margin: 42px 80px;
   }
+  
   h3.subtitle {
     margin: 0;
     padding-bottom: 11px;
