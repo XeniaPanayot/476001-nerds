@@ -737,10 +737,11 @@ ul {
   background-color: #e74246;
 }
 .social-media-logo:active {
-  color: #e37376;
   background-color: #d7373b;
 
   box-shadow: inset 0 5px #c13135;
+
+  opacity: 0.5;
 }
 
 /*-----------------------------WRITE-INNER-----------------------*/
