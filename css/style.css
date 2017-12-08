@@ -967,6 +967,7 @@ ul {
   line-height: 1.2em;
   text-transform: uppercase;
   background-color: #eeeeee;
+  border-radius: 4px;
   
   display: inline-block;
   text-align: center;
@@ -986,6 +987,10 @@ ul {
   
   text-align: center;
 }
+.pagination-current {
+  border: 2px solid #dbdbdb;
+  background: none;
+}
 
 .pagination-number:hover,
 .pagination-number:focus,
@@ -999,7 +1004,6 @@ ul {
   color: #a9a9a9;
   box-shadow: inset 0 5px #bfbfbf;
 }
-
 
 /*---------------------------------HEADER & NAV----------------------------*/
 .main-header {
