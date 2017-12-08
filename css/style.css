@@ -132,7 +132,7 @@ ul {
     flex-direction: column;
   }
 
-/*-------------------------------Layout HEADER---------------------*/
+  /*-------------------------------Layout HEADER---------------------*/
   .logo {
     min-width: 160px; 
     min-height: 70px;
@@ -236,7 +236,7 @@ ul {
 
   .services-button {
     width: 160px;
-    padding: 11px 40px;
+    padding: 12px 40px;
   }
   .button-green {
     background-color: #00ca74;
@@ -370,14 +370,14 @@ ul {
 
     font-weight: 400;
 
-    padding-bottom: 28px;
+    padding-bottom: 25px;
   }
   .slider-button {
     font-size: 14px;
 
     min-width: 240px;
 
-    padding: 12px 40px;
+    padding: 13px 40px;
   }
   .slide-text {
     max-width: 515px;
@@ -409,7 +409,7 @@ ul {
     margin-right: 0;
   }
   .services-button {
-   
+
   }
   /*-------------------------------О НАС----------------------------*/
   .about-us {
@@ -519,7 +519,7 @@ ul {
 
 /*-----------------------PARTNERS---------------------*/
 .partners {
-/*  min-height: 180px;*/
+  /*  min-height: 180px;*/
 
   border-bottom: 2px solid #eeeeee;
   border-top: 2px solid #eeeeee;
@@ -575,17 +575,15 @@ ul {
 }
 
 .contacts-wrapper {
-  min-height: 420px;
+
   position: relative;
 
-  background-size: cover;
+  /*background-size: cover;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
 }
-.address-wrapper {
-  min-height: 400px;
-}
+
 .iframe-map {
   border: 0;
   width: 100%;
@@ -599,20 +597,21 @@ ul {
 }
 .contacts-address {
   width: 320px;
-  min-height: 310px;
+  /*min-height: 310px;*/
 
   background-color: #ffffff;
 
   position: absolute;
-  top: 11%;
-  left: 7%;
+  top: 53px;
+  left: 9px;
 
   display: flex;
   flex-direction: column;
 
-  padding-top: 52px;
+  padding-top: 51px;
+  padding-bottom: 46px;
   padding-right: 49px;
-  padding-left: 52px;
+  padding-left: 50px;
 }
 
 .subtitle-contacts {
@@ -624,7 +623,7 @@ ul {
   padding-bottom: 15px;
 }
 .tel {
-  padding-bottom: 34px;
+  padding-bottom: 35px;
 }
 
 .write-us-button {
@@ -862,8 +861,9 @@ ul {
 /*-------------------------Layout CATALOGUE MAIN-------------------------*/
 .headline {
   background: #eeeeee;
-  padding-top: 70px;
-  padding-bottom: 108px;
+  padding-top: 66px;
+  padding-bottom: 111px;
+  padding-right: 22px;
 }
 .page-headline {
   margin: 0 auto;
@@ -877,7 +877,7 @@ ul {
   width: 826px;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-left: 49px;
+  padding-left: 47px;
 }
 
 /*-----------------------SORTER---------------------*/
@@ -885,7 +885,7 @@ ul {
   display: flex;
   align-items: center;
 
-  padding-top: 51px;
+  padding-top: 54px;
   padding-bottom: 53px;
 }
 
@@ -909,13 +909,13 @@ ul {
 }
 .sorter-btn {
   font-size: 12px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .sorter-item:hover,
 .sorter-item:focus,
 .sorter-btn:hover,
 .sorter-btn:focus {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .sorter-item:active,
 .sorter-btn:active {
@@ -946,6 +946,10 @@ ul {
   align-items: center;
 }
 /*----------------------------------PAGINATION-----------------------------*/
+.pagination {
+  padding-bottom: 20px;
+}
+
 .pagination li {
   display: inline-block;
   vertical-align: top;
@@ -1140,17 +1144,18 @@ fieldset {
 /*-------------------------RADIOBUTTON & CHECKBOX---------------------------*/
 .grid,
 .features {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
+ 
 .grid-headline,
 .features-headline {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 .grid-list li {
-  padding-bottom: 17px;
+  padding-bottom: 15px;
 }
 .features-list li {
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 }
 legend .subtitle {
   font-size: 18px;
