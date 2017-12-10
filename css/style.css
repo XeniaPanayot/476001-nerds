@@ -182,12 +182,11 @@ fieldset {
     width: 23px;
     height: 21px;
 
-    background-image: url(../img/cart-icon.png);
+    background-image: url(../img/cart-icon.svg);
     background-repeat: no-repeat;
     background-position: 0 3px;
 
     margin: 0 16px;
-    opacity: 0.7;
   }
   /*----------------------------------BUTTONS--------------------------------*/
 
@@ -582,8 +581,10 @@ fieldset {
   border: 0;
   width: 100%;
   height: 420px;
-
+  background-image: url(../img/map.jpg);
   display: block;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 .contacts {    
   margin: 0 auto;
@@ -684,44 +685,30 @@ fieldset {
   font-weight: 400;
 }
 
-.social-media-logo-vk {
+.social-media-logo {
+  background: red;
+  border-radius: 50%;
+  display: block;
   width: 80px;
   height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  background: url(../img/vk-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #eeeeee;
-  border-radius: 50%;
-
-  display: block;
+}
+.social-media-logo img {
+  width: 20px;
+  height: 20px;
 }
 
-.social-media-logo-fb {
-  width: 80px;
-  height: 80px;
-
-  background: url(../img/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #eeeeee;  
-  border-radius: 50%;
-
-  display: block;
+.social-media-logo path {
+  fill: #ffffff;
 }
 
-.social-media-logo-inst {
-  width: 80px;
-  height: 80px;
-
-  background: url(../img/insta-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #eeeeee;
-  border-radius: 50%;
-
-  display: block;
+.social-media-logo:active path {
+  fill: #e37376;
 }
+
 .social-media-logo:hover,
 .social-media-logo:focus {
   background-color: #e74246;
@@ -743,17 +730,17 @@ fieldset {
   width: 960px;
   /*min-height: 589px;*/
   
-  position: absolute;
-  top: -51px;
+  position: fixed;
+  top: 200px;
   left: 50%;
-  transform: translateX(-51%);
+  transform: translateX(-50%);
 
   background-color: #ffffff;
   box-sizing: border-box;
   box-shadow: 0 14px 44px 3px #333;
 
   padding: 69px 100px; 
-
+  z-index: 4;
   display: none;
 }
 .write-inner-show {
@@ -778,7 +765,7 @@ fieldset {
   opacity: 0.5;
   color: #fb565a;
   cursor: pointer;
-
+  border: none;
   position: absolute;
   top: 47px;
   right: 67px;
@@ -1127,7 +1114,7 @@ fieldset {
 }
 
 .range-controls .bar {
-  width: 55%;
+  width: 56%;
   height: 3px;
   margin-left: 9%;
   background: #00ca74;
@@ -1223,6 +1210,11 @@ input[type="radio"] + label {
   padding-left: 37px;
   background-repeat: no-repeat;
   position: relative;
+  color: #283136;
+}
+input[type="checkbox"] + label:hover,
+input[type="radio"] + label:hover {
+  color: #000000;
 }
 
 input[type="checkbox"] + label::before,
@@ -1234,56 +1226,51 @@ input[type="radio"] + label::before {
   width:27px;
   position: absolute;
   left: 0px;
-  opacity: 0.5;
+  /*opacity: 0.4;*/
 }
 
 input[type="checkbox"] + label::before {
-  background-image: url(../img/checkbox-off.png);
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
 }
 
 input[type="radio"] + label::before {
-  background-image: url(../img/radio-off.png);
+  background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
 
 }
 
 input[type="checkbox"]:checked + label::before {
-  background-image: url(../img/checkbox-on.png);
-  background-repeat: no-repeat;
-  opacity: 0.5;
+  background-image: url(../img/checkbox-on.svg);
+
 }
 
 input[type="radio"]:checked + label::before {
-  background-image: url(../img/radio-on.png);
-  background-repeat: no-repeat;
-  opacity: 0.5;
+  background-image: url(../img/radio-on.svg);
 }
 
-  /*input[type="checkbox"] + label:hover,
-  input[type="checkbox"] + label:focus,
-  input[type="radio"] + label:hover,
-  input[type="radio"] + label:focus {
-   color: #4d4d4d;
-   }*/
-
-   input[type="checkbox"]:checked:hover + label::before,
-   input[type="checkbox"]:checked:focus + label::before,
-   input[type="radio"]:checked:hover + label::before,
-   input[type="radio"]:checked:focus + label::before {
-    opacity: 1;
+  input[type="radio"]:hover + label::before,
+  input[type="radio"]:focus + label::before {
+    background-image: url(../img/radio-off-hover.svg);
+  }
+  input[type="radio"]:checked:hover + label::before,
+  input[type="radio"]:checked:focus + label::before {
+    background-image: url(../img/radio-on-hover.svg)
   }
 
   input[type="checkbox"]:hover + label::before,
-  input[type="checkbox"]:focus + label::before,
-  input[type="radio"]:hover + label::before,
-  input[type="radio"]:focus + label::before {
-    opacity: 1;
+  input[type="checkbox"]:focus + label::before {
+    background-image: url(../img/checkbox-off-hover.svg);
+  }
+
+  input[type="checkbox"]:checked:hover + label::before,
+  input[type="checkbox"]:checked:focus + label::before {
+    background-image: url(../img/checkbox-on-hover.svg);
   }
 
   input[type="checkbox"]:disabled + label,
   input[type="radio"]:disabled + label {
-    opacity: 0.1;
+    opacity: 0.2;
   }
 
   .input-submit {
